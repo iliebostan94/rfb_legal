@@ -33,10 +33,10 @@ export default async (app) => {
    * @see {@link https://bud.js.org/docs/bud.watch}
    */
   app
-    // .setPublicPath("/wp-content/themes/rfb-legal/public/")
-    .setUrl('http://localhost:10043')
-    .setProxyUrl('http://example.test')
-    .watch(['resources/views', 'app']);
+    .setPublicPath("/wp-content/themes/rfb-legal/public/")
+    // .setUrl('http://localhost:10043')
+    // .setProxyUrl('http://example.test')
+    // .watch(['resources/views', 'app']);
 
   /**
    * Generate WordPress `theme.json`
