@@ -74,7 +74,7 @@
 
     <div class="flex items-center justify-between">
       <a href="/">
-        <img class="w-1/4 h-1/4" src="/wp-content/uploads/2023/10/cropped-smartdata-favicon-2-1024x993-1.png" alt="">
+        <img class="w-1/4 h-1/4" src="/wp-content/uploads/2023/11/Asset_3.png" alt="">
       </a>
 
       <div class="flex -mx-2">

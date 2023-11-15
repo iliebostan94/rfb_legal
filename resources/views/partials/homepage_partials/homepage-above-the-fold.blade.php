@@ -1,6 +1,8 @@
 
-<section class="bg-white flex dark:bg-gray-900 h-screen bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 flex flex-col justify-center relative animate-fade animate-delay-300 animation-duration-1000 animate-once">
+<section class="relative h-screen">
+  <div class="absolute inset-0 bg-gradient-to-b from-blue-50 to-transparent dark:from-gray-900 dark:to-transparent"></div>
+  <div class="absolute inset-0 bg-blend-hard-light bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')] bg-cover bg-center"></div>
+  <div class="py-8 px-4 lg:py-16 mx-auto max-w-screen-xl h-full text-center z-10 flex flex-col justify-center relative animate-fade animate-delay-300 animation-duration-1000 animate-once">
       <a href="#" class="w-full max-w-md mx-auto inline-flex justify-center items-center py-1 px-1 pr-4 mb-7 text-sm text-blue-700 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800">
         <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">We can redirect your visitors to your latest content</span>
         <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
@@ -38,7 +40,7 @@
       <img src="<?php echo esc_url( $above_the_fold_section['certificate_image_2'] ); ?>" width="100px" />
     </div>
   </div>
-  <div class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"></div>
+{{--  <div class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"></div>--}}
 
   <?php endif; ?>
 </section>

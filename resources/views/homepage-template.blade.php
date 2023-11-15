@@ -12,6 +12,7 @@
       if ($group['active']) {
   ?>
                         {{--  homepage group--}}
+  @include('partials.homepage_partials.homepage-main-hero-section')
   @include('partials.homepage_partials.homepage-above-the-fold')
   @include('partials.homepage_partials.homepage-masonry-section')
   @include('partials.homepage_partials.homepage-trusted-source-section')
