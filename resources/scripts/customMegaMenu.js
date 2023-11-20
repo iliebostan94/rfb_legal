@@ -22,6 +22,8 @@ function mobileMenuReposition() {
 }
 
 function mobileMenuChildrenLevelExpansion() {
+
+  // first level items logic ------------------------
   const firstLevelParents = document.querySelectorAll(".first-level-parent");
 
   let backIconSpan = document.createElement('span');
@@ -47,7 +49,7 @@ function mobileMenuChildrenLevelExpansion() {
       let firstUL = firstLevelChildren.querySelector('.mega-sub-menu');
 
       if (firstUL) {
-        firstUL.classList.add("first-level-container-panel" , "someOtherClass");
+        firstUL.classList.add("first-level-container-panel" , "firstLevelSuperClass");
 
         nameDiv.textContent = firstLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
 
@@ -61,9 +63,57 @@ function mobileMenuChildrenLevelExpansion() {
   });
 }
 
+function mobileMenuChildrenSecondLevelExpansion() {
+  // second level items logic ------------------------
+  const secondLevelParents = document.querySelectorAll(".second-level-parent");
+
+  let backIconSpanSecondLevel = document.createElement('span');
+  backIconSpanSecondLevel.classList.add('custom-back-indicator');
+  backIconSpanSecondLevel.setAttribute('data-has-click-event', 'true');
+
+  backIconSpanSecondLevel.addEventListener('click', function (backIconEvent) {
+    backIconEvent.preventDefault();
+    let secondLevelParents = backIconSpanSecondLevel.parentNode.parentNode;
+    secondLevelParents.classList.remove("second-level-container-panel", "secondLevelSuperClass");
+    document.querySelector("li.second-level-parent.mega-toggle-on").classList.remove("mega-toggle-on" , "menu-set-on-top");
+  });
+
+  let nameDivSecondLevel = document.createElement('div');
+  nameDivSecondLevel.classList.add('text-black', 'p-2', 'text-xl');
+  let exploreDivSecondLevel = document.createElement('div');
+  exploreDivSecondLevel.classList.add('text-black', 'p-2', 'text-sm' , 'ml-8' , 'second-level-explore-title');
+
+  secondLevelParents.forEach(function (secondLevelChildren) {
+    let secondLevelTrigger = secondLevelChildren.querySelector("span.mega-indicator");
+    secondLevelTrigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      secondLevelChildren.classList.add("menu-set-on-top");
+
+      let secondLevelUL = secondLevelChildren.querySelector('.mega-sub-menu');
+      if (secondLevelUL) {
+        secondLevelUL.classList.add("second-level-container-panel", "secondLevelSuperClass");
+
+        nameDivSecondLevel.textContent = secondLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
+        exploreDivSecondLevel.textContent = "EXPLORE";
+        nameDivSecondLevel.prepend(backIconSpanSecondLevel);
+        nameDivSecondLevel.append(exploreDivSecondLevel);
+        secondLevelUL.prepend(nameDivSecondLevel);
+
+      } else {
+        console.log("touch failed on second level");
+      }
+
+    });
+
+  });
+
+  // END second level items logic ------------------------
+}
+
 window.addEventListener("DOMContentLoaded", () => {
 
   mobileMenuReposition();
   mobileMenuChildrenLevelExpansion();
+  mobileMenuChildrenSecondLevelExpansion();
 
 });
