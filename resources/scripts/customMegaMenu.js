@@ -33,7 +33,7 @@ function mobileMenuChildrenLevelExpansion() {
   backIconSpan.addEventListener('click', function (backIconEvent) {
     backIconEvent.preventDefault();
     let firstUL = backIconSpan.parentNode.parentNode;
-    firstUL.classList.remove("first-level-container-panel", "someOtherClass");
+    firstUL.classList.remove("first-level-container-panel", "firstLevelSuperClass" , "animate-fade-left" , "animate-duration-500");
     document.querySelector("li.first-level-parent.mega-toggle-on").classList.remove("mega-toggle-on" , "menu-set-on-top");
   });
 
@@ -49,7 +49,7 @@ function mobileMenuChildrenLevelExpansion() {
       let firstUL = firstLevelChildren.querySelector('.mega-sub-menu');
 
       if (firstUL) {
-        firstUL.classList.add("first-level-container-panel" , "firstLevelSuperClass");
+        firstUL.classList.add("first-level-container-panel" , "firstLevelSuperClass" , "animate-fade-left" , "animate-duration-500");
 
         nameDiv.textContent = firstLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
 
@@ -74,7 +74,7 @@ function mobileMenuChildrenSecondLevelExpansion() {
   backIconSpanSecondLevel.addEventListener('click', function (backIconEvent) {
     backIconEvent.preventDefault();
     let secondLevelParents = backIconSpanSecondLevel.parentNode.parentNode;
-    secondLevelParents.classList.remove("second-level-container-panel", "secondLevelSuperClass");
+    secondLevelParents.classList.remove("second-level-container-panel", "secondLevelSuperClass", "animate-fade-left" ,  "animate-duration-500" );
     document.querySelector("li.second-level-parent.mega-toggle-on").classList.remove("mega-toggle-on" , "menu-set-on-top");
   });
 
@@ -91,7 +91,7 @@ function mobileMenuChildrenSecondLevelExpansion() {
 
       let secondLevelUL = secondLevelChildren.querySelector('.mega-sub-menu');
       if (secondLevelUL) {
-        secondLevelUL.classList.add("second-level-container-panel", "secondLevelSuperClass");
+        secondLevelUL.classList.add("second-level-container-panel", "secondLevelSuperClass" , "animate-fade-left" , "animate-duration-500" );
 
         nameDivSecondLevel.textContent = secondLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
         exploreDivSecondLevel.textContent = "EXPLORE";

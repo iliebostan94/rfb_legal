@@ -32,7 +32,8 @@ ul.first-level-container-panel {
   padding-bottom: 16px !important;
   padding-left: 10px !important;
   padding-top: 16px !important;
-  transition: left 3.5s cubic-bezier(.175,.885,.32,1.075) !important;
+  transition: opacity 0.5s cubic-bezier(.175,.885,.32,1.075) !important;
+  overflow-y:scroll !important;
 }
 
 ul.second-level-container-panel {
@@ -47,7 +48,7 @@ ul.second-level-container-panel {
   padding-bottom: 16px !important;
   padding-left: 10px !important;
   padding-top: 16px !important;
-  transition: left 3.5s cubic-bezier(.175,.885,.32,1.075) !important;
+  transition: opacity 0.5s cubic-bezier(.175,.885,.32,1.075) !important;
   overflow-y:scroll !important;
 }
 ul.second-level-container-panel > li:last-child {
