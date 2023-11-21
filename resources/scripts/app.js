@@ -28,6 +28,6 @@ function testItFirst() {
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  testItFirst();
+  // testItFirst();
 
 });

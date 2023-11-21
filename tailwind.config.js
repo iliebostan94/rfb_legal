@@ -11,6 +11,9 @@ const config = {
       },
       height: {
         '400' : '25rem' ,'420' : '26.25rem', '480' : '30rem', '520' : '32.5rem',
+      },
+      borderRadius: {
+        '56' : '56px',
       }
     },
   },
