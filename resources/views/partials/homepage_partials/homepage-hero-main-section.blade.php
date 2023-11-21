@@ -13,8 +13,9 @@ $hero_main_image          = get_sub_field('hero_main_image');
 ?>
 
 <section class="relative h-screen mb-12">
-  <div class="absolute w-full h-full bg-cover bg-center bg-[url('<?php echo $hero_main_image ?>')] rounded-b-56"></div>
-  <div class="mx-auto max-w-7xl h-full text-left flex flex-col justify-center items-start relative animate-fade animate-delay-300 animation-duration-1000 animate-once">
+
+  <div class="absolute w-full h-full bg-cover bg-center rounded-b-56" style="background-image: url(<?php echo $hero_main_image ?>)"></div>
+  <div class="mx-auto p-6 lg:p-0 max-w-7xl h-full text-left flex flex-col justify-center items-start relative animate-fade animate-delay-300 animation-duration-1000 animate-once">
       <h1 class="mb-4 max-w-3xl text-2xl tracking-tight leading-none text-white md:text-4xl"><?php echo $hero_main_title; ?></h1>
       <p class="mb-8 max-w-xl text-base font-normal text-white lg:text-lg"><?php echo $hero_main_subtitle; ?></p>
       <div class="flex flex-col space-y-2 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
@@ -23,6 +24,7 @@ $hero_main_image          = get_sub_field('hero_main_image');
         </a>
       </div>
   </div>
+
 </section>
 
   <?php

@@ -62,3 +62,30 @@ div.second-level-explore-title::after {
   color: dodgerblue;
   margin: auto 10px auto 10px;
 }
+
+ul.third-level-container-panel {
+  opacity: 1 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 90vh !important;
+  z-index: 1 !important;
+  background-color: rgb(255 255 254/var(--tw-bg-opacity)) !important;
+  padding-bottom: 16px !important;
+  padding-left: 10px !important;
+  padding-top: 16px !important;
+  transition: opacity 0.5s cubic-bezier(.175,.885,.32,1.075) !important;
+  overflow-y:scroll !important;
+}
+ul.third-level-container-panel > li:last-child {
+  margin-bottom: 150px !important;
+}
+
+div.third-level-explore-title::after {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: dodgerblue;
+  margin: auto 10px auto 10px;
+}

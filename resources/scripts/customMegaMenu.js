@@ -61,6 +61,7 @@ function mobileMenuChildrenLevelExpansion() {
       }
     });
   });
+  // END first level items logic ------------------------
 }
 
 function mobileMenuChildrenSecondLevelExpansion() {
@@ -110,10 +111,58 @@ function mobileMenuChildrenSecondLevelExpansion() {
   // END second level items logic ------------------------
 }
 
+function mobileMenuChildrenThirdLevelExpansion() {
+  // third level items logic ------------------------
+  const thirdLevelParents = document.querySelectorAll(".third-level-parent");
+
+  let backIconSpanThirdLevel = document.createElement('span');
+  backIconSpanThirdLevel.classList.add('custom-back-indicator');
+  backIconSpanThirdLevel.setAttribute('data-has-click-event', 'true');
+
+  backIconSpanThirdLevel.addEventListener('click', function (backIconEvent) {
+    backIconEvent.preventDefault();
+    let thirdLevelParents = backIconSpanThirdLevel.parentNode.parentNode;
+    thirdLevelParents.classList.remove("third-level-container-panel", "thirdLevelSuperClass", "animate-fade-left" ,  "animate-duration-500" );
+    document.querySelector("li.third-level-parent.mega-toggle-on").classList.remove("mega-toggle-on" , "menu-set-on-top");
+  });
+
+  let nameDivThirdLevel = document.createElement('div');
+  nameDivThirdLevel.classList.add('text-black', 'p-2', 'text-xl');
+  let exploreDivThirdLevel = document.createElement('div');
+  exploreDivThirdLevel.classList.add('text-black', 'p-2', 'text-sm' , 'ml-8' , 'third-level-explore-title');
+
+  thirdLevelParents.forEach(function (thirdLevelChildren) {
+    let thirdLevelTrigger = thirdLevelChildren.querySelector("span.mega-indicator");
+    thirdLevelTrigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      thirdLevelChildren.classList.add("menu-set-on-top");
+
+      let thirdLevelUL = thirdLevelChildren.querySelector('.mega-sub-menu');
+      if (thirdLevelUL) {
+        thirdLevelUL.classList.add("third-level-container-panel", "thirdLevelSuperClass" , "animate-fade-left" , "animate-duration-500" );
+
+        nameDivThirdLevel.textContent = thirdLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
+        exploreDivThirdLevel.textContent = "EXPLORE";
+        nameDivThirdLevel.prepend(backIconSpanThirdLevel);
+        nameDivThirdLevel.append(exploreDivThirdLevel);
+        thirdLevelUL.prepend(nameDivThirdLevel);
+
+      } else {
+        console.log("touch failed on third level");
+      }
+
+    });
+
+  });
+
+  // END third level items logic ------------------------
+}
+
 window.addEventListener("DOMContentLoaded", () => {
 
   mobileMenuReposition();
   mobileMenuChildrenLevelExpansion();
   mobileMenuChildrenSecondLevelExpansion();
+  mobileMenuChildrenThirdLevelExpansion();
 
 });
