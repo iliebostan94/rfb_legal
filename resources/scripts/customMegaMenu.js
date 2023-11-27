@@ -81,8 +81,8 @@ function mobileMenuChildrenSecondLevelExpansion() {
 
   let nameDivSecondLevel = document.createElement('div');
   nameDivSecondLevel.classList.add('text-black', 'p-2', 'text-xl');
-  let exploreDivSecondLevel = document.createElement('div');
-  exploreDivSecondLevel.classList.add('text-black', 'p-2', 'text-sm' , 'ml-8' , 'second-level-explore-title');
+  let exploreDivSecondLevel = document.createElement('a');
+  exploreDivSecondLevel.classList.add('block', 'text-black', 'p-2', 'text-sm' , 'ml-8' , 'second-level-explore-title');
 
   secondLevelParents.forEach(function (secondLevelChildren) {
     let secondLevelTrigger = secondLevelChildren.querySelector("span.mega-indicator");
@@ -94,6 +94,7 @@ function mobileMenuChildrenSecondLevelExpansion() {
       if (secondLevelUL) {
         secondLevelUL.classList.add("second-level-container-panel", "secondLevelSuperClass" , "animate-fade-left" , "animate-duration-500" );
 
+        exploreDivSecondLevel.href = secondLevelChildren.querySelector('a').href;
         nameDivSecondLevel.textContent = secondLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
         exploreDivSecondLevel.textContent = "EXPLORE";
         nameDivSecondLevel.prepend(backIconSpanSecondLevel);
@@ -124,23 +125,32 @@ function mobileMenuChildrenThirdLevelExpansion() {
     let thirdLevelParents = backIconSpanThirdLevel.parentNode.parentNode;
     thirdLevelParents.classList.remove("third-level-container-panel", "thirdLevelSuperClass", "animate-fade-left" ,  "animate-duration-500" );
     document.querySelector("li.third-level-parent.mega-toggle-on").classList.remove("mega-toggle-on" , "menu-set-on-top");
+    let parentLiRow = backIconSpanThirdLevel.closest(".mega-menu-row.menu-set-on-top");
+    // console.log(parentLiRow);
+    parentLiRow.classList.remove("menu-set-on-top");
   });
 
   let nameDivThirdLevel = document.createElement('div');
   nameDivThirdLevel.classList.add('text-black', 'p-2', 'text-xl');
-  let exploreDivThirdLevel = document.createElement('div');
-  exploreDivThirdLevel.classList.add('text-black', 'p-2', 'text-sm' , 'ml-8' , 'third-level-explore-title');
+  let exploreDivThirdLevel = document.createElement('a');
+  exploreDivThirdLevel.classList.add('block', 'text-black', 'p-2', 'text-sm' , 'ml-8' , 'third-level-explore-title');
 
   thirdLevelParents.forEach(function (thirdLevelChildren) {
     let thirdLevelTrigger = thirdLevelChildren.querySelector("span.mega-indicator");
+    // let parentLiRow = thirdLevelChildren.parentNode.parentNode.parentNode.parentNode;
+    let parentLiRow = thirdLevelChildren.closest(".mega-menu-row");
+    // console.log(parentLiRow);
+
     thirdLevelTrigger.addEventListener('click', function (event) {
       event.preventDefault();
+      parentLiRow.classList.add("menu-set-on-top");
       thirdLevelChildren.classList.add("menu-set-on-top");
 
       let thirdLevelUL = thirdLevelChildren.querySelector('.mega-sub-menu');
       if (thirdLevelUL) {
         thirdLevelUL.classList.add("third-level-container-panel", "thirdLevelSuperClass" , "animate-fade-left" , "animate-duration-500" );
 
+        exploreDivThirdLevel.href = thirdLevelChildren.querySelector('a').href;
         nameDivThirdLevel.textContent = thirdLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
         exploreDivThirdLevel.textContent = "EXPLORE";
         nameDivThirdLevel.prepend(backIconSpanThirdLevel);
