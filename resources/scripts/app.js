@@ -1,5 +1,6 @@
 import { domReady } from "@roots/sage/client";
-import "./customMegaMenu.js";
+import "./customMegaMenuMobile.js";
+import "./customMegaMenuDesktop.js";
 
 /**
  * app.main
