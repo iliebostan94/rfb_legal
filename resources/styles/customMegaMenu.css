@@ -123,6 +123,15 @@
 
 /*  Nav menu style DESKTOP  */
 @media only screen and (min-width: 800px) {
+
+  li.second-level-parent.mega-toggle-on > a {
+    background: white !important;
+  }
+
+  li.third-level-parent.mega-toggle-on {
+    background: white !important;
+  }
+
   li.third-level-parent.mega-menu-item-has-children a span {
     transform: rotate(-90deg);
   }
@@ -140,6 +149,17 @@
   }
   li.column-clone-extended li.mega-menu-item {
     padding: 4px 16px !important;
+  }
+  ul.third-level-container-panel.thirdLevelSuperClass.hidden-forced {
+    display: none !important;
+  }
+
+  li.mega-menu-column.column-clone-extended {
+    @apply animate-fade-left animate-duration-1000;
+  }
+
+  li.mega-menu-column.column-clone-extended.animation-toggled {
+    @apply animate-fade-right animate-duration-1000;
   }
 
 

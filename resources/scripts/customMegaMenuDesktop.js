@@ -1,6 +1,6 @@
 
 if (screen && screen.width > 800) {
-  console.log("code for desktop");
+  // console.log("code for desktop");
 
   function mobileMenuChildrenThirdLevelExpansion() {
     // third level items logic ------------------------
@@ -48,23 +48,8 @@ if (screen && screen.width > 800) {
     businessItemColumn.parentNode.append(businessItemColumnClone);
 
 
-
-    let backIconSpanThirdLevel = document.createElement('span');
-    backIconSpanThirdLevel.classList.add('custom-back-indicator');
-    backIconSpanThirdLevel.setAttribute('data-has-click-event', 'true');
-
-    backIconSpanThirdLevel.addEventListener('click', function (backIconEvent) {
-      backIconEvent.preventDefault();
-      let thirdLevelParents = backIconSpanThirdLevel.parentNode.parentNode;
-      thirdLevelParents.classList.remove("third-level-container-panel", "thirdLevelSuperClass", "animate-fade-left", "animate-duration-500");
-      document.querySelector("li.third-level-parent.mega-toggle-on").classList.remove("mega-toggle-on", "menu-set-on-top");
-      let parentLiRow = backIconSpanThirdLevel.closest(".mega-menu-row.menu-set-on-top");
-      // console.log(parentLiRow);
-      parentLiRow.classList.remove("menu-set-on-top");
-    });
-
     let nameDivThirdLevel = document.createElement('div');
-    nameDivThirdLevel.classList.add('text-black', 'p-4', 'text-xl');
+    nameDivThirdLevel.classList.add('text-black', 'p-4', 'text-xl', 'm-3', 'bg-white');
     let exploreDivThirdLevel = document.createElement('a');
     exploreDivThirdLevel.classList.add('block', 'text-black', 'pt-2', 'text-sm', 'third-level-explore-title');
 
@@ -73,33 +58,39 @@ if (screen && screen.width > 800) {
       // let parentLiRow = thirdLevelChildren.parentNode.parentNode.parentNode.parentNode;
       let parentLiRow = thirdLevelChildren.closest(".mega-menu-row");
 
-      thirdLevelTrigger.addEventListener('click', function (event) {
+      thirdLevelTrigger.addEventListener('click', function (event){
         event.preventDefault();
         parentLiRow.classList.add("menu-set-on-top");
         thirdLevelChildren.classList.add("menu-set-on-top");
 
+        thirdLevelChildren.classList.contains("mega-toggle-on") ? personalItemColumnClone.classList.toggle("animation-removed")
+          : personalItemColumnClone.classList.toggle("animation-toggled");
+        thirdLevelChildren.classList.contains("mega-toggle-on") ? businessItemColumnClone.classList.toggle("animation-removed")
+          : businessItemColumnClone.classList.toggle("animation-toggled");
+
         let thirdLevelUL = thirdLevelChildren.querySelector('.mega-sub-menu');
         if (thirdLevelUL) {
-          thirdLevelUL.classList.add("third-level-container-panel", "thirdLevelSuperClass", "animate-fade-left", "animate-duration-500");
+          thirdLevelUL.classList.add("third-level-container-panel", "thirdLevelSuperClass");
 
           exploreDivThirdLevel.href = thirdLevelChildren.querySelector('a').href;
           nameDivThirdLevel.textContent = thirdLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
           exploreDivThirdLevel.textContent = "EXPLORE";
-          nameDivThirdLevel.prepend(backIconSpanThirdLevel);
           nameDivThirdLevel.append(exploreDivThirdLevel);
           thirdLevelUL.prepend(nameDivThirdLevel);
 
+
+
           if (thirdLevelUL.parentNode.parentNode.parentNode.classList.contains('personal-law-column')) {
-                console.log("test 11111");
                 let thirdLevelULContent = thirdLevelUL.innerHTML;
                 personalItemColumnClone.innerHTML = thirdLevelULContent;
-                thirdLevelUL.classList.add("hidden");
+                // personalItemColumnClone.classList.add("animate-fade-right", "animate-duration-1000");
+                thirdLevelUL.classList.add("hidden-forced");
 
           } else if (thirdLevelUL.parentNode.parentNode.parentNode.classList.contains('business-law-column')) {
-                console.log("test 22222");
                 let thirdLevelULContent = thirdLevelUL.innerHTML;
                 businessItemColumnClone.innerHTML = thirdLevelULContent;
-                thirdLevelUL.classList.add("hidden");
+                // businessItemColumnClone.classList.add("animate-fade-right", "animate-duration-1000");
+                thirdLevelUL.classList.add("hidden-forced");
 
           } else {
                 console.log("cloning third level failed");
