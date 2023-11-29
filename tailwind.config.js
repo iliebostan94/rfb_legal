@@ -19,6 +19,7 @@ const config = {
   },
   fontFamily: {
     'body': [
+      'Proxima Nova', 'sans-serif',
       'Inter',
       'ui-sans-serif',
       'system-ui',
@@ -29,13 +30,13 @@ const config = {
       'Helvetica Neue',
       'Arial',
       'Noto Sans',
-      'sans-serif',
       'Apple Color Emoji',
       'Segoe UI Emoji',
       'Segoe UI Symbol',
       'Noto Color Emoji'
     ],
     'sans': [
+      'Proxima Nova', 'sans-serif',
       'Inter',
       'ui-sans-serif',
       'system-ui',
