@@ -16,6 +16,8 @@
 {{--    @include('partials.homepage_partials.homepage-main-hero-video-section')--}}
     @include('partials.homepage_partials.homepage-hero-main-section')
     @include('partials.homepage_partials.homepage-quick-stats-section')
+    @include('partials.homepage_partials.homepage-history-company')
+
 
     {{--    @include('partials.content')--}}
       <?php

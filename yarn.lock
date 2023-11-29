@@ -8698,6 +8698,7 @@ __metadata:
     flowbite: "npm:^2.1.1"
     postcss: "npm:^8.4.31"
     postcss-loader: "npm:^7.3.3"
+    tailwind-scrollbar: "npm:^3.0.5"
     tailwindcss: "npm:^3.3.5"
     tailwindcss-animate: "npm:^1.0.7"
     tailwindcss-animated: "npm:^1.0.1"
@@ -9189,6 +9190,15 @@ __metadata:
   bin:
     svgo: ./bin/svgo
   checksum: cf107e9fa29914504aa65f5f514e16b73aa76adb1c67c84312d3f2402f4bf00b8b6b0d62e3cce247cf16017c24b8191eb003c2f99f8e10844ad8803acb9d806c
+  languageName: node
+  linkType: hard
+
+"tailwind-scrollbar@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "tailwind-scrollbar@npm:3.0.5"
+  peerDependencies:
+    tailwindcss: 3.x
+  checksum: cdce9ade4856cd1eccc4ed9b3330aa98952eab8e892ec4cdf5766c185eb75cb0e9bd7eb057ecbe585169be0ef3a167cc83e43d89cd48cd0ff898da7cea459d75
   languageName: node
   linkType: hard
 

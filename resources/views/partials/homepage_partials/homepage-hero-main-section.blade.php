@@ -14,7 +14,7 @@ $hero_second_button_link    = get_sub_field('hero_second_button_link');
 $hero_main_image            = get_sub_field('hero_main_image');
 ?>
 
-<section class="relative h-700 mb-12">
+<section class="relative h-700">
 
   <div class="relative md:absolute w-full h-80 md:h-full bg-cover bg-center rounded-b-56" style="background-image: url(<?php echo $hero_main_image ?>)"></div>
   <div class="mx-auto p-6 lg:p-0 max-w-7xl h-96 md:h-full bg-black md:bg-transparent flex flex-col justify-center relative animate-fade animate-delay-300 animation-duration-1000 animate-once">

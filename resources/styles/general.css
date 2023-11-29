@@ -29,3 +29,12 @@
 a.cta-btn:hover svg.cta-btn-arrow-right {
   @apply animate-fade-right animate-once;
 }
+
+li p.timeline-unit-text {
+  width: 168px;
+}
+
+div.timeline-e-1 {
+  bottom: -6px;
+  left: 24px;
+}

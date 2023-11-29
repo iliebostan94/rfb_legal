@@ -56,6 +56,7 @@ const config = {
   },
   plugins: [
     import('flowbite/plugin.js'),
+    require('tailwind-scrollbar'),
     require('tailwindcss-animated'),
 
   ],
