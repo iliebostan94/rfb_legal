@@ -13,7 +13,7 @@
     if ($group['active']) {
       ?>
     {{--  homepage group--}}
-    @include('partials.homepage_partials.homepage-main-hero-video-section')
+{{--    @include('partials.homepage_partials.homepage-main-hero-video-section')--}}
     @include('partials.homepage_partials.homepage-hero-main-section')
     @include('partials.homepage_partials.homepage-masonry-section')
     @include('partials.homepage_partials.homepage-trusted-source-section')
