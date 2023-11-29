@@ -38,3 +38,8 @@ div.timeline-e-1 {
   bottom: -6px;
   left: 24px;
 }
+
+section.timeline-section:hover ol.timeline-wrapper {
+  @apply overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100;
+
+}
