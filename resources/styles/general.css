@@ -49,3 +49,16 @@ section.timeline-section:hover ol.timeline-wrapper {
     @apply overflow-x-scroll;
 
 }
+
+div.stat-unit-1 div.stat-custom-icon{
+  background-image: url("http://localhost:10043/wp-content/uploads/2023/11/supreme-court-1.svg");
+}
+div.stat-unit-2 div.stat-custom-icon{
+  background-image: url("http://localhost:10043/wp-content/uploads/2023/11/judicial-1.svg");
+}
+div.stat-unit-3 div.stat-custom-icon{
+  background-image: url("http://localhost:10043/wp-content/uploads/2023/11/group-1.svg");
+}
+div.stat-unit-4 div.stat-custom-icon{
+  background-image: url("http://localhost:10043/wp-content/uploads/2023/11/handshake-1.svg");
+}

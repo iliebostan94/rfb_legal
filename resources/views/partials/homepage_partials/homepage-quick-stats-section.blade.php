@@ -19,13 +19,15 @@ if ( have_rows('above_the_fold_section') ):
       <div class="flex flex-wrap flex-row md:flex-row md:justify-around md:flex-nowrap" >
       <?php
       if ( have_rows('quick_stats_fields') ):
+        $statCount = 1;
       while( have_rows('quick_stats_fields') ) : the_row();
 
         $quick_stats_title            = get_sub_field('quick_stats_title');
         $quick_stats_subtitle         = get_sub_field('quick_stats_subtitle');
         ?>
 
-        <div class="basis-1/2 py-4 md:py-0 md:basis-full ">
+        <div class="stat-unit-<?php echo $statCount++ ?> flex flex-col items-center basis-1/2 py-4 md:py-0 md:basis-full ">
+          <div class="stat-custom-icon h-14 w-14"></div>
           <p class="text-4xl font-medium mb-2"><?php echo $quick_stats_title ?></p>
           <p class="text-xl font-medium"><?php echo $quick_stats_subtitle ?></p>
         </div>
