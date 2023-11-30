@@ -10,7 +10,7 @@ if ( have_rows('above_the_fold_section') ):
 <section class="timeline-section max-w-7xl flex flex-col justify-center text-center mx-auto mb-6">
 
   <h2 class="mb-8 text-3xl font-medium tracking-tight leading-none text-black md:text-4xl">History of company</h2>
-  <ol class="timeline-wrapper relative flex pb-3 flex-row mb-4 overflow-x-scroll scrollbar-thin cursor-move select-none ">
+  <ol class="timeline-wrapper relative flex pb-3 flex-row mb-4 overflow-x-scroll scrollbar-thin cursor-grab select-none">
       <?php
       if ( have_rows('history_repeater') ):
         while( have_rows('history_repeater') ) : the_row();

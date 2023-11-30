@@ -19,6 +19,9 @@
     @include('partials.homepage_partials.homepage-history-company')
 
 
+    @include('partials.theme_partials.awards_accreditations_section')
+
+
     {{--    @include('partials.content')--}}
       <?php
     }  // your field group key

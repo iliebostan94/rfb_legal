@@ -30,6 +30,10 @@ a.cta-btn:hover svg.cta-btn-arrow-right {
   @apply animate-fade-right animate-once;
 }
 
+li.timeline-unit {
+  height: 105px;
+}
+
 li p.timeline-unit-text {
   width: 168px;
 }
@@ -39,7 +43,9 @@ div.timeline-e-1 {
   left: 24px;
 }
 
+/*add the horizontal scroll bar on desktop*/
 section.timeline-section:hover ol.timeline-wrapper {
-  @apply overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100;
+/*  @apply overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100;*/
+    @apply overflow-x-scroll;
 
 }
