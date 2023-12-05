@@ -24,6 +24,8 @@
 
     @include('partials.theme_partials.need_assistance_banner')
 
+    @include('partials.homepage_partials.homepage_testimonials')
+
 
 
     {{--    @include('partials.content')--}}
