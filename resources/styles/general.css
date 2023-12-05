@@ -62,3 +62,10 @@ div.stat-unit-3 div.stat-custom-icon{
 div.stat-unit-4 div.stat-custom-icon{
   background-image: url("http://localhost:10043/wp-content/uploads/2023/11/handshake-1.svg");
 }
+
+a.services-link::after {
+  content: "\2192";
+  color: black;
+  margin-left: auto;
+  font-size: 28px;
+}

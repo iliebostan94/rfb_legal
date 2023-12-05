@@ -18,8 +18,9 @@
     @include('partials.homepage_partials.homepage-quick-stats-section')
     @include('partials.homepage_partials.homepage-history-company')
 
-
     @include('partials.theme_partials.awards_accreditations_section')
+
+    @include('partials.homepage_partials.services_section')
 
 
     {{--    @include('partials.content')--}}
