@@ -154,9 +154,9 @@
     display: none !important;
   }
 
-  li.mega-menu-column.column-clone-extended {
-    @apply animate-fade-left animate-duration-1000;
-  }
+  /*li.mega-menu-column.column-clone-extended {*/
+  /*  @apply animate-fade-left animate-duration-1000;*/
+  /*}*/
 
   li.mega-menu-column.column-clone-extended.animation-toggled {
     @apply animate-fade-right animate-duration-1000;

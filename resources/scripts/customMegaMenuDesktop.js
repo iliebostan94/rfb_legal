@@ -63,9 +63,9 @@ if (screen && screen.width > 800) {
         parentLiRow.classList.add("menu-set-on-top");
         thirdLevelChildren.classList.add("menu-set-on-top");
 
-        thirdLevelChildren.classList.contains("mega-toggle-on") ? personalItemColumnClone.classList.toggle("animation-removed")
+        thirdLevelChildren.classList.contains("mega-toggle-on") ? personalItemColumnClone.classList.toggle("")
           : personalItemColumnClone.classList.toggle("animation-toggled");
-        thirdLevelChildren.classList.contains("mega-toggle-on") ? businessItemColumnClone.classList.toggle("animation-removed")
+        thirdLevelChildren.classList.contains("mega-toggle-on") ? businessItemColumnClone.classList.toggle("")
           : businessItemColumnClone.classList.toggle("animation-toggled");
 
         let thirdLevelUL = thirdLevelChildren.querySelector('.mega-sub-menu');
