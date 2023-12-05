@@ -22,6 +22,9 @@
 
     @include('partials.homepage_partials.services_section')
 
+    @include('partials.theme_partials.need_assistance_banner')
+
+
 
     {{--    @include('partials.content')--}}
       <?php
