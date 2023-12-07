@@ -13,7 +13,7 @@
     if ($group['active']) {
       ?>
     {{--  homepage group--}}
-{{--    @include('partials.homepage_partials.homepage-main-hero-video-section')--}}
+    {{--    @include('partials.homepage_partials.homepage-main-hero-video-section')--}}
     @include('partials.homepage_partials.homepage-hero-main-section')
     @include('partials.homepage_partials.homepage-quick-stats-section')
     @include('partials.homepage_partials.homepage-history-company')
@@ -24,7 +24,7 @@
 
     @include('partials.theme_partials.need_assistance_banner')
 
-    @include('partials.homepage_partials.homepage_testimonials')
+    @include('partials.theme_partials.theme_default_testimonials')
 
 
 
@@ -32,9 +32,6 @@
       <?php
     }  // your field group key
       ?>
-    {{--  theme options group--}}
-    @include('partials.theme_partials.general-call-to-action')
-    @include('partials.theme_partials.quote-card-general')
 
   @endwhile
 @endsection

@@ -69,3 +69,7 @@ a.services-link::after {
   margin-left: auto;
   font-size: 28px;
 }
+
+div.min-h-340 {
+  min-height: 340px;
+}

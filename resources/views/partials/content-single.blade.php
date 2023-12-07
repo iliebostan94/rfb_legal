@@ -11,20 +11,6 @@
     @php(the_content())
   </div>
 
-  <?php
-        $display_cta_block = get_field('display_cta_block');
-        $display_quote_card_block = get_field('display_quote_card_block');
-
-
-        if($display_cta_block) { ?>
-          @include('partials.theme_partials.general-call-to-action')
-        <?php
-        }
-        if($display_quote_card_block) { ?>
-        @include('partials.theme_partials.quote-card-general')
-        <?php
-        }  ?>
-
 
   {{--  <footer>--}}
 {{--    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}--}}
