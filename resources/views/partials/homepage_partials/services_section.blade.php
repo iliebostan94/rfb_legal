@@ -19,7 +19,7 @@ if ( have_rows('above_the_fold_section') ):
 
 
 <section class="bg-gray-200 text-gray-600 body-font">
-  <div class="max-w-4xl pt-14 mx-auto text-center">
+  <div class="max-w-4xl py-4 px-3 md:px-3 md:pt-14 mx-auto text-center">
     <h2 class="text-4xl mb-5 font-semibold text-black"><?php echo $services_title ?></h2>
     <p class="text-xl text-black"><?php echo $services_subtitle ?></p>
   </div>
