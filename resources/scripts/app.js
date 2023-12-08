@@ -2,6 +2,7 @@ import { domReady } from "@roots/sage/client";
 import "./customMegaMenuMobile.js";
 import "./customMegaMenuDesktop.js";
 import "./general.js";
+import "./allCarousels.js"
 import { Carousel } from 'flowbite';
 
 
