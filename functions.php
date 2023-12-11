@@ -40,6 +40,14 @@ if (! function_exists('\Roots\bootloader')) {
     );
 }
 
+function enqueue_glide_styles() {
+    wp_enqueue_style('glide-core', get_template_directory_uri() . '/node_modules/@glidejs/glide/dist/css/glide.core.min.css');
+    wp_enqueue_style('glide-theme', get_template_directory_uri() . '/node_modules/@glidejs/glide/dist/css/glide.theme.min.css');
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_glide_styles');
+
+
 \Roots\bootloader()->boot();
 
 /*

@@ -1,9 +1,9 @@
 import { domReady } from "@roots/sage/client";
+import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm';
 import "./customMegaMenuMobile.js";
 import "./customMegaMenuDesktop.js";
 import "./general.js";
 import "./allCarousels.js"
-import { Carousel } from 'flowbite';
 
 
 /**
@@ -32,6 +32,8 @@ function testItFirst() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+  // Glide
+  new Glide('#animation-team-carousel' , { type:'slider', startAt:0, perView:4, gap:50, }).mount({ Controls, Breakpoints })
 
   // testItFirst();
 

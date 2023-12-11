@@ -1,7 +1,5 @@
 // Testimonials carousel on Homepage
-const carouselElement = document.getElementById('carousel-example');
-// const carouselElementTeam = document.getElementById('animation-team-carousel');
-
+const carouselElement = document.getElementById('animation-carousel');
 
 const items = [
   {
@@ -55,7 +53,7 @@ const options = {
 
 // instance options object
 const instanceOptions = {
-  id: 'carousel-example',
+  id: 'animation-carousel',
   override: true
 };
 // -------------------------------
