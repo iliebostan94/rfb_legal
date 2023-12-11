@@ -28,6 +28,8 @@
 
     @include('partials.theme_partials.meet_team_default_section')
 
+    @include('partials.theme_partials.theme_default_contact_form')
+
     @include('partials.theme_partials.theme_insights_slider')
 
 

@@ -28,7 +28,7 @@ $hero_main_image            = get_sub_field('hero_main_image');
           <a href="<?php echo $hero_second_button_link; ?>" class="text-white text-base font-medium text-center bg-transparent border py-3 px-5 border-gray-300 focus:outline-none hover:text-white hover:bg-gray-900 hover:border-gray-900 focus:ring-4 focus:ring-gray-200 rounded-lg ">
               <?php echo $hero_second_button_text; ?>
           </a>
-      </div>
+        </div>
 
       </div>
   </div>
