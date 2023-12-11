@@ -1,6 +1,7 @@
 
 // function to make History of company draggable on desktop
   document.addEventListener("DOMContentLoaded", function () {
+
   const timelineWrapper = document.querySelector(".timeline-wrapper");
   let isDragging = false;
   let startX;
@@ -25,6 +26,7 @@
   startX = e.clientX;
 }
 }
+
 });
 // -------------------------------
 

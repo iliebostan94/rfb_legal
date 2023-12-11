@@ -1,9 +1,10 @@
 import { domReady } from "@roots/sage/client";
 import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm';
+import { Carousel } from 'flowbite';
 import "./customMegaMenuMobile.js";
 import "./customMegaMenuDesktop.js";
 import "./general.js";
-import "./allCarousels.js"
+// import "./allCarousels.js"
 
 
 /**
@@ -33,7 +34,11 @@ function testItFirst() {
 
 window.addEventListener("DOMContentLoaded", () => {
   // Glide
-  new Glide('#animation-team-carousel' , { type:'slider', startAt:0, perView:4, gap:50, }).mount({ Controls, Breakpoints })
+  new Glide('#animation-team-carousel' , { type:'slider', startAt:0, perView:4, gap:50, }).mount({ Controls, Breakpoints });
+
+  // Tailwind CSS Carousel - Flowbite
+  const carouselElement = document.getElementById('animation-carousel');
+  new Carousel(carouselElement, );
 
   // testItFirst();
 
