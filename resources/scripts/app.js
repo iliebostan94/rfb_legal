@@ -35,6 +35,7 @@ function testItFirst() {
 window.addEventListener("DOMContentLoaded", () => {
   // Glide
   new Glide('#animation-team-carousel' , { type:'slider', startAt:0, perView:4, gap:50, }).mount({ Controls, Breakpoints });
+  new Glide('#insights-carousel' , { type:'slider', startAt:0, perView:3, gap:50, }).mount({ Controls, Breakpoints });
 
   // Tailwind CSS Carousel - Flowbite
   const carouselElement = document.getElementById('animation-carousel');
