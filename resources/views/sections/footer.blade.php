@@ -2,9 +2,22 @@
 {{--  @php(dynamic_sidebar('sidebar-footer'))--}}
 {{--</footer>--}}
 
+<?php
+//
+//$group = acf_get_field_group('group_65782389a5f9e'); // your field group key
+//if ($group['active']) {
+//
+//  $theme_contact_form_section_title                 = get_field('theme_contact_form_section_title', 'options');
+//  $theme_contact_form_section_subtitle              = get_field('theme_contact_form_section_subtitle', 'options');
+//
+//  $theme_contact_form_section_first_button          = get_field('theme_contact_form_section_first_button', 'options');
+//  $theme_contact_form_section_first_button_link     = get_field('theme_contact_form_section_first_button_link', 'options');
+//  $theme_contact_form_section_second_button         = get_field('theme_contact_form_section_second_button', 'options');
+//  $theme_contact_form_section_second_button_link    = get_field('theme_contact_form_section_second_button_link', 'options');
+//  $theme_contact_form_shortcode                     = get_field('theme_contact_form_shortcode', 'options');
+//  ?><!---->
 
-
-<footer class="bg-white dark:bg-gray-900">
+<footer class="bg-customGrey-200">
   <div class="container px-6 py-12 mx-auto">
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
       <div class="sm:col-span-2">

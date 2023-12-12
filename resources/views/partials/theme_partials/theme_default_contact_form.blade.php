@@ -11,6 +11,7 @@ if ($group['active']) {
   $theme_contact_form_section_first_button_link     = get_field('theme_contact_form_section_first_button_link', 'options');
   $theme_contact_form_section_second_button         = get_field('theme_contact_form_section_second_button', 'options');
   $theme_contact_form_section_second_button_link    = get_field('theme_contact_form_section_second_button_link', 'options');
+  $theme_contact_form_shortcode                     = get_field('theme_contact_form_shortcode', 'options');
   ?>
 <section class="bg-customGrey-200 body-font text-black">
   <div class="max-w-5xl px-5 py-24 mx-auto flex flex-wrap items-center">
@@ -40,6 +41,7 @@ if ($group['active']) {
       </div>
       <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
       <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+      <?php echo $theme_contact_form_shortcode; ?>
     </div>
   </div>
 </section>
