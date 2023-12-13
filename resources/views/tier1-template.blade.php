@@ -14,6 +14,8 @@
     {{--  tier 1 group--}}
     @include('partials.tier_1_partials.tier_1_hero_main_section')
 
+    @include('partials.tier_1_partials.tier_1_services_grid')
+
     @include('partials.theme_partials.need_assistance_banner_full')
     @include('partials.theme_partials.awards_accreditations_section')
 
