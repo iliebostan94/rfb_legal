@@ -31,7 +31,7 @@ if ($group['active']) {
           $member_team_position       = get_sub_field('member_team_position', 'options');
         ?>
 
-            <div id="member-unit-<?php echo $carousel_item_order ?>" class="glide__slide h-80 ">
+            <div id="member-unit-<?php echo $carousel_item_order++ ?>" class="glide__slide h-80 ">
                 <img src="<?php echo $member_team_image ?>"  alt="image"  class="h-4/5 w-full object-cover"/>
                 <div class="member-team-desc h-1/5 w-full bg-zinc-100 text-black text-center pt-3">
                   <p class="text-base font-semibold title-font tracking-wider"><?php echo $member_team_name ?></p>
@@ -39,7 +39,6 @@ if ($group['active']) {
                 </div>
             </div>
         <?php
-        $carousel_item_order++;
         endwhile;
         endif;
         ?>

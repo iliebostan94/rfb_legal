@@ -18,11 +18,11 @@ if ($group['active']) {
     <div class="flex md:ml-auto md:mr-0 mx-auto items-end flex-shrink-0 space-x-4">
       <div class="gen-quest">
         <p class="leading-relaxed text-gray-300 text-base md:text-lg font-normal">General Questions</p>
-        <a href="tel:<?php echo $company_phone_number ?>" class=" flex justify-center items-center text-sm md:text-lg lg:text-2xl leading-relaxed text-gray-300"><img src="http://localhost:10043/wp-content/uploads/2023/12/call.svg" alt="call-svg"><?php echo $company_phone_number ?></a>
+        <a href="tel:<?php echo $company_phone_number ?>" class=" flex justify-center items-center text-sm md:text-lg lg:text-2xl leading-relaxed text-gray-300"><img src="wp-content/uploads/2023/12/call.svg" alt="call-svg"><?php echo $company_phone_number ?></a>
       </div>
       <div>
         <p class="leading-relaxed text-gray-300 text-base md:text-lg font-normal">Send Us Email</p>
-        <a href="mailto:<?php echo $company_email ?>" class="flex justify-center items-center text-sm md:text-lg lg:text-2xl leading-relaxed text-gray-300"><img src="http://localhost:10043/wp-content/uploads/2023/12/mail.svg" alt="mail-svg"><?php echo $company_email ?></a>
+        <a href="mailto:<?php echo $company_email ?>" class="flex justify-center items-center text-sm md:text-lg lg:text-2xl leading-relaxed text-gray-300"><img src="wp-content/uploads/2023/12/mail.svg" alt="mail-svg"><?php echo $company_email ?></a>
       </div>
     </div>
   </div>

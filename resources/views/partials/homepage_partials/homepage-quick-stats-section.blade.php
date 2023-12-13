@@ -24,10 +24,11 @@ if ( have_rows('above_the_fold_section') ):
 
         $quick_stats_title            = get_sub_field('quick_stats_title');
         $quick_stats_subtitle         = get_sub_field('quick_stats_subtitle');
+        $quick_stats_icon             = get_sub_field('quick_stats_icon');
         ?>
 
         <div class="stat-unit-<?php echo $statCount++ ?> flex flex-col items-center basis-1/2 py-4 md:py-0 md:basis-full ">
-          <div class="stat-custom-icon h-14 w-14"></div>
+          <div class="stat-custom-icon h-14 w-14" style="background-image: url(<?php echo $quick_stats_icon ?>)"></div>
           <p class="text-4xl font-medium mb-2"><?php echo $quick_stats_title ?></p>
           <p class="text-xl font-medium"><?php echo $quick_stats_subtitle ?></p>
         </div>

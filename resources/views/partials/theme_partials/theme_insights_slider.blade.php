@@ -33,7 +33,7 @@ if ($group['active']) {
 {{--    <pre><?php print_r($post) ?></pre>--}}
 
             <a href="<?php echo $permalink; ?>" class="test-unit insight-unit-<?php echo $insight_item_order ?>" >
-              <div id="insight-unit-<?php echo $insight_item_order ?>" class="glide__slide h-72 ">
+              <div id="insight-unit-<?php echo $insight_item_order++ ?>" class="glide__slide h-72 ">
                 <img src="<?php echo $post_thumbnail ?>"  alt="image"  class="h-3/5 w-full object-cover"/>
                 <div class="insight-desc flex flex-col justify-center h-2/5 w-full bg-zinc-100 text-black text-left p-4">
                   <p class="text-base font-semibold title-font tracking-wider"><?php echo $title ?></p>
@@ -44,7 +44,6 @@ if ($group['active']) {
 
           <?php endforeach;
           endif;
-            $insight_item_order++;
             ?>
 
 
