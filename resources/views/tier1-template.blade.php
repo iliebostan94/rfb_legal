@@ -13,14 +13,14 @@
       ?>
     {{--  tier 1 group--}}
     @include('partials.tier_1_partials.tier_1_hero_main_section')
-
+    @include('partials.theme_partials.theme_default_breadcrumbs')
     @include('partials.tier_1_partials.tier_1_services_grid')
 
     @include('partials.theme_partials.need_assistance_banner_full')
     @include('partials.theme_partials.awards_accreditations_section')
 
 
-    {{--    @include('partials.content')--}}
+{{--        @include('partials.content')--}}
       <?php
     }  // your field group key
       ?>

@@ -60,3 +60,13 @@ a.services-link::after {
 div.min-h-340 {
   min-height: 340px;
 }
+
+  /*breadcrumbs style*/
+p#yoast-breadcrumbs span {
+  padding: 0 12px;
+}
+p#yoast-breadcrumbs span:first-of-type {
+  padding-left: 0;
+}
+
+/*------------------------*/
