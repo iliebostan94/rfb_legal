@@ -1,5 +1,5 @@
 {{--
-  Template Name: Tier 1
+  Template Name: Tier 2
 --}}
 
 @extends('layouts.app')
@@ -8,19 +8,22 @@
   @while(have_posts())
     @php(the_post())
       <?php
-      $group = acf_get_field_group('group_6579ba2fa347c'); // your field group key
+      $group = acf_get_field_group('group_657b172132538'); // your field group key
     if ($group['active']) {
       ?>
-    {{--  tier 1 group--}}
+    {{--  tier 2 group--}}
     @include('partials.tier_page_partials.tier_page_hero_main_section')
     @include('partials.theme_partials.theme_default_breadcrumbs')
     @include('partials.tier_page_partials.tier_page_services_grid')
 
-    @include('partials.theme_partials.need_assistance_banner_full')
-    @include('partials.theme_partials.awards_accreditations_section')
+    <div class="page-content">
+      @include('partials.content-page')
+    </div>
+
+    @include('partials.theme_partials.theme_default_contact_form')
+    @include('partials.theme_partials.theme_insights_slider')
 
 
-{{--        @include('partials.content')--}}
       <?php
     }  // your field group key
       ?>

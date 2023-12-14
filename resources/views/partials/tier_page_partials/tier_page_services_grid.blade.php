@@ -5,23 +5,23 @@ $above_the_fold_section = get_field('tier_1_template_group');
 if ( have_rows('tier_1_template_group') ):
 while( have_rows('tier_1_template_group') ) : the_row();
 
-  $tier_1_main_services_title               = get_sub_field('tier_1_main_services_title');
-  $tier_1_main_services_subtitle            = get_sub_field('tier_1_main_services_subtitle');
+  $tier_main_services_title               = get_sub_field('tier_main_services_title');
+  $tier_main_services_subtitle            = get_sub_field('tier_main_services_subtitle');
 
-  $tier_1_main_services_grid_repeater       = get_sub_field('tier_1_main_services_grid_repeater');
+  $tier_main_services_grid_repeater       = get_sub_field('tier_main_services_grid_repeater');
   ?>
 
 <section class="relative bg-customGrey-400">
 
   <div class="py-8 md:py-16 mx-auto max-w-screen-xl text-center ">
-    <h2 class="mb-8 mx-auto text-3xl md:text-4xl max-w-screen-lg font-medium tracking-tight leading-none text-black "><?php echo $tier_1_main_services_title ?></h2>
-    <p class="mb-8 mx-auto text-base md:text-2xl max-w-screen-lg font-light text-black md:px-12 "><?php echo $tier_1_main_services_subtitle ?></p>
+    <h2 class="mb-8 mx-auto text-3xl md:text-4xl max-w-screen-lg font-medium tracking-tight leading-none text-black "><?php echo $tier_main_services_title ?></h2>
+    <p class="mb-8 mx-auto text-base md:text-2xl max-w-screen-lg font-light text-black md:px-12 "><?php echo $tier_main_services_subtitle ?></p>
     <div class="py-4 md:py-12">
       <div class="flex flex-wrap flex-row md:flex-row" >
           <?php
-        if ( have_rows('tier_1_main_services_grid_repeater') ):
+        if ( have_rows('tier_main_services_grid_repeater') ):
           $serviceCount = 1;
-        while( have_rows('tier_1_main_services_grid_repeater') ) : the_row();
+        while( have_rows('tier_main_services_grid_repeater') ) : the_row();
 
           $service_image            = get_sub_field('service_image');
           $service_title            = get_sub_field('service_title');
