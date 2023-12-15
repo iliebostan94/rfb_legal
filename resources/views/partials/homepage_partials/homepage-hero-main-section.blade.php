@@ -16,7 +16,7 @@ $hero_main_image            = get_sub_field('hero_main_image');
 
 <section class="relative h-700">
 
-  <div class="relative md:absolute w-full h-80 md:h-full bg-cover bg-center rounded-b-56" style="background-image: url(<?php echo $hero_main_image ?>)"></div>
+  <div class="relative md:absolute w-full h-80 md:h-full bg-cover bg-center" style="background-image: url(<?php echo $hero_main_image ?>)"></div>
   <div class="mx-auto p-6 lg:p-0 max-w-7xl h-96 md:h-full bg-black md:bg-transparent flex flex-col justify-center relative animate-fade animate-delay-300 animation-duration-1000 animate-once">
       <div class="max-w-full md:max-w-3xl text-left flex flex-col justify-center items-start">
         <h1 class="mb-2 md:mb-4 text-3xl tracking-tight leading-none text-white md:text-5xl"><?php echo $hero_main_title; ?></h1>
