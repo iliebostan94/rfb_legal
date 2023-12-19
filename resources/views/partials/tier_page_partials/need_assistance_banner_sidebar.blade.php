@@ -15,7 +15,7 @@ if ($group['active']) {
 
   ?>
 
-<section class="need_assistance_banner_sidebar">
+<section class="need_assistance_banner_sidebar mb-10">
   <div class="max-w-sm p-3 m-auto flex flex-col justify-between bg-black rounded-lg">
     <div class="text-center mb-6">
       <h2 class="text-2xl font-medium title-font text-customGrey-200">Need Legal Assistance on <?php single_post_title(); ?>?</h2>

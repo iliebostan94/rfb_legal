@@ -70,3 +70,7 @@ p#yoast-breadcrumbs span:first-of-type {
 }
 
 /*------------------------*/
+
+div.tier_testimonials_sidebar_slider_stepper button.line-step-slider {
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity)) !important;
+}
