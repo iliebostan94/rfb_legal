@@ -13,7 +13,7 @@ while( have_rows('insights_template_group') ) : the_row();
 <section class="bg-customDarkGrey-900 w-full text-black ">
   <div class="max-w-7xl px-5 py-12 max-h-full mx-auto">
             <h4 class="text-white">Recent Updates</h4>
-    <div class="flex flex-col flex-row justify-center h-2/5 w-full text-black text-left p-4">
+    <div class="flex flex-col lg:flex-row justify-center h-2/5 w-full text-black text-left p-4">
             <?php
             $recent_insight_item_order = 1;
 
