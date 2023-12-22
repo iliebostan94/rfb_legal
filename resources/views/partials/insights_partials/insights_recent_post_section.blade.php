@@ -11,9 +11,9 @@ while( have_rows('insights_template_group') ) : the_row();
   ?>
 
 <section class="bg-customDarkGrey-900 w-full text-black ">
-  <div class="max-w-7xl px-5 py-12 max-h-full mx-auto">
-            <h4 class="text-white">Recent Updates</h4>
-    <div class="flex flex-col lg:flex-row justify-center h-2/5 w-full text-black text-left p-4">
+  <div class="max-w-7xl py-12 max-h-full mx-auto p-4 lg:py-16">
+            <h4 class="text-white text-xl lg:text-2xl py-4 lg:py-6 font-bold">Recent Updates</h4>
+    <div class="flex flex-col lg:flex-row justify-center w-full text-black text-left gap-y-6 lg:gap-x-14">
             <?php
             $recent_insight_item_order = 1;
 
@@ -26,11 +26,11 @@ while( have_rows('insights_template_group') ) : the_row();
                   $post_date = get_the_date('j-m-Y', $post->ID);
                   ?>
 
-                <a href="<?php echo $permalink; ?>" class="recent-insight-unit w-1/2 insight-unit-<?php echo $recent_insight_item_order ?>" >
-                  <div id="insight-unit-<?php echo $insight_item_order++ ?>" class=" h-72 ">
-                    <img src="<?php echo $post_thumbnail ?>"  alt="image"  class="h-3/5 w-full object-cover"/>
-                    <div class="insight-desc flex flex-col justify-center h-2/5 w-full bg-zinc-100 text-black text-left p-4">
-                      <p class="text-base font-semibold title-font tracking-wider"><?php echo $title ?></p>
+                <a href="<?php echo $permalink; ?>" class="recent-insight-unit w-full lg:w-1/2 insight-unit-<?php echo $recent_insight_item_order ?> " >
+                  <div id="insight-unit-<?php echo $recent_insight_item_order++ ?>" class="">
+                    <img src="<?php echo $post_thumbnail ?>"  alt="image"  class="aspect-2/1 w-full rounded-t-xl object-cover"/>
+                    <div class="insight-desc flex flex-col justify-center h-2/5 w-full bg-zinc-100 text-black text-left p-4 rounded-b-xl">
+                      <p class="text-base font-semibold title-font tracking-wider truncate"><?php echo $title ?></p>
                       <p class="text-base font-semibold title-font tracking-wider"><?php echo $post_date ?></p>
                     </div>
                   </div>
