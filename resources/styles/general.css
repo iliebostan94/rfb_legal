@@ -7,10 +7,10 @@
     @apply mt-12;
   }
 
-  form#search-filter-form-602 > ul {
+  form.searchandfilter > ul {
     @apply flex flex-col gap-3;
   }
-  form#search-filter-form-602 li.sf-field-search{
+  form.searchandfilter li.sf-field-search{
     @apply flex flex-col gap-3;
     max-width: 280px;
   }
@@ -52,8 +52,8 @@ div.timeline-e-1 {
 
 /*add the horizontal scroll bar on desktop*/
 section.timeline-section:hover ol.timeline-wrapper {
-/*  @apply overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100;*/
-    @apply overflow-x-scroll;
+  /*  @apply overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100;*/
+  @apply overflow-x-scroll;
 
 }
 
@@ -68,7 +68,7 @@ div.min-h-340 {
   min-height: 340px;
 }
 
-  /*breadcrumbs style*/
+/*breadcrumbs style*/
 p#yoast-breadcrumbs span {
   padding: 0 12px;
 }
@@ -87,47 +87,47 @@ div.tier_testimonials_sidebar_slider_stepper button.line-step-slider {
 }
 
 /*filter styles from Insights template*/
-form#search-filter-form-602 > ul {
+form.searchandfilter > ul {
   @apply flex items-center;
 }
-form#search-filter-form-602 li.sf-field-search{
+form.searchandfilter li.sf-field-search{
   @apply flex items-center;
 }
-form#search-filter-form-602 li.sf-field-search h4 {
+form.searchandfilter li.sf-field-search h4 {
   @apply text-xl font-semibold p-0 mr-6;
 }
-form#search-filter-form-602 li.sf-field-search input.sf-input-text {
+form.searchandfilter li.sf-field-search input.sf-input-text {
   @apply rounded py-3 px-4;
 }
-form#search-filter-form-602 li.sf-field-author{
+form.searchandfilter li.sf-field-author{
   @apply flex items-center p-0 mx-6 bg-white rounded py-0 px-4 h-12;
 }
-form#search-filter-form-602 li.sf-field-author select{
+form.searchandfilter li.sf-field-author select{
   @apply bg-white;
 }
-form#search-filter-form-602 li.sf-field-category{
+form.searchandfilter li.sf-field-category{
   @apply flex items-center p-0 m-0 bg-white rounded py-0 px-4 h-12;
 }
-form#search-filter-form-602 li.sf-field-category select{
+form.searchandfilter li.sf-field-category select{
   @apply bg-white;
 }
 /* END filter styles from Insights template*/
 
 
 /*Insights RESULTS styles from Insights template*/
-div#search-filter-results-602 {
+div.search-filter-results {
   @apply grid gap-x-8 grid-cols-1 lg:grid-cols-4 ;
 }
-div#search-filter-results-602 div.insight-result-unit {
+div.search-filter-results div.insight-result-unit {
   @apply flex flex-col items-center justify-start h-80 py-6;
 }
-div#search-filter-results-602 div.insight-result-unit div.insight-result-unit-thumbnail {
+div.search-filter-results div.insight-result-unit div.insight-result-unit-thumbnail {
   @apply h-2/3;
 }
-div#search-filter-results-602 div.insight-result-unit div.insight-result-unit-thumbnail img {
-  @apply rounded-t-xl h-full object-cover;
+div.search-filter-results div.insight-result-unit div.insight-result-unit-thumbnail img {
+  @apply rounded-t-xl h-full;
 }
-div#search-filter-results-602 div.insight-result-unit div.insight-result-unit-content h2.insight-result-unit-title {
+div.search-filter-results div.insight-result-unit div.insight-result-unit-content h2.insight-result-unit-title {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -135,3 +135,4 @@ div#search-filter-results-602 div.insight-result-unit div.insight-result-unit-co
 }
 
 /* END Insights RESULTS styles from Insights template*/
+

@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} config */
 const config = {
-  content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}', "./node_modules/flowbite/**/*.js"],
+  content: [
+    './index.php',
+    './app/**/*.php',
+    './resources/**/*.{php,vue,js}',
+    './node_modules/flowbite/**/*.js',
+  ],
   theme: {
     extend: {
       colors: {
@@ -50,7 +55,7 @@ const config = {
         '25%': '25%',
         '20%': '20%',
         '10%': '10%',
-        },
+      },
       height: {
         400: '25rem',
         420: '26.25rem',
@@ -69,7 +74,7 @@ const config = {
         750: '46.875rem',
         780: '48.75rem',
         800: '50rem',
-        },
+      },
       borderRadius: {
         56: '56px',
       },
@@ -79,7 +84,7 @@ const config = {
     },
   },
   fontFamily: {
-    'body': [
+    body: [
       'Proxima Nova',
       'sans-serif',
       'Inter',
@@ -97,7 +102,7 @@ const config = {
       'Segoe UI Symbol',
       'Noto Color Emoji',
     ],
-    'sans': [
+    sans: [
       'Proxima Nova',
       'sans-serif',
       'Inter',
@@ -115,13 +120,12 @@ const config = {
       'Segoe UI Emoji',
       'Segoe UI Symbol',
       'Noto Color Emoji',
-    ]
+    ],
   },
   plugins: [
     import('flowbite/plugin.js'),
     require('tailwind-scrollbar'),
     require('tailwindcss-animated'),
-
   ],
 };
 
