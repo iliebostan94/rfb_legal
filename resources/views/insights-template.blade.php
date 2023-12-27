@@ -14,9 +14,11 @@
 
     @include('partials.insights_partials.insights_hero_main_section')
     @include('partials.theme_partials.theme_default_breadcrumbs')
+    @include('partials.insights_partials.insights_filter_form')
     @include('partials.insights_partials.insights_recent_post_section')
+    @include('partials.insights_partials.insights_filter_results')
 
-    @include('partials.content-page')
+{{--    @include('partials.content-page')--}}
 
       <?php
     }  // your field group key

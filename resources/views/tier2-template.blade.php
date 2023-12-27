@@ -23,7 +23,7 @@
       </div>
       <div class="page-sidebar max-w-sm">
           @include('.partials.tier_page_partials.need_assistance_banner_sidebar')
-          @include('.partials.tier_page_partials.key_people_block_sidebar_repeater')
+          @include('.partials.tier_page_partials.key_people_block_sidebar')
           @include('partials.tier_page_partials.tier_testimonials_sidebar')
       </div>
     </section>
