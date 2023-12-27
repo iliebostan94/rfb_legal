@@ -1,4 +1,3 @@
-
 <?php
 $above_the_fold_section = get_field('above_the_fold_section');
 
@@ -8,10 +7,21 @@ if ( have_rows('above_the_fold_section') ):
     ?>
 
 <section class="timeline-section max-w-7xl flex flex-col justify-center text-center mx-auto mb-6">
+  <style>
+    #repetitive:last-child #timelineBlock #timelineLine {
+      display: none;
+    }
+  </style>
 
-  <h2 class="mb-8 text-3xl font-medium tracking-tight leading-none text-black md:text-4xl">History of company</h2>
-  <ol class="timeline-wrapper relative flex pb-3 flex-row mb-4 overflow-x-scroll scrollbar-thin cursor-grab select-none">
-      <?php
+  <h2 class="text-3xl font-medium tracking-tight leading-none text-brandBlue md:text-4xl">
+    History of Ronald Fletcher Baker
+  </h2>
+  <div class="w-full flex justify-center my-8 ">
+    <div class="w-20 bg-accentGold h-1 rounded-full"> </div>
+  </div>
+  <ol
+    class="timeline-wrapper relative flex pb-3 flex-row mb-4 overflow-x-scroll scrollbar-thin cursor-grab select-none">
+    <?php
       if ( have_rows('history_repeater') ):
         while( have_rows('history_repeater') ) : the_row();
 
@@ -20,13 +30,29 @@ if ( have_rows('above_the_fold_section') ):
           $history_date             = get_sub_field('history_date');
 
           ?>
-    <div class="timeline-unit-wrapper">
-      <li class="timeline-unit text-left mb-8 pr-36 relative border-b border-black">
-        <p class="timeline-unit-text text-lg font-semibold text-gray-900 pl-6"><?php echo $history_title ?></p>
-        <p class="mb-4 text-sm font-normal text-gray-500 pl-6"><?php echo $history_subtitle ?></p>
-        <div class="timeline-e-1 absolute w-3 h-3 bg-blue-700 rounded-full border border-white"></div>
+    <div class="timeline-unit-wrapper relative " id="repetitive">
+
+      <li class="timeline-unit text-left mb-8 pr-36 relative h-auto ">
+        <p class="timeline-unit-text text-lg font-semibold text-brandBlue pl-6 mb-2 ">
+          <?php echo $history_title ?>
+        </p>
+        <p class="mb-5 text-sm font-normal text-utilityGrey pl-6 h-auto">
+          <?php echo $history_subtitle ?>
+        </p>
+
       </li>
-      <p class="timeline-unit-text text-lg text-left font-semibold text-gray-900 pl-6"><?php echo $history_date ?></p>
+      <div class="absolute w-full flex mb-5 items-center ml-6 bottom-[22px] bg-white" id="timelineBlock">
+        <div class="h-3 w-7 flex justify-center items-center">
+          <div class="w-3 h-3 rounded-full bg-accentGold flex justify-center items-center ">
+            <div class="w-2 h-2 rounded-full bg-white"></div>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-lightBlue .timeline-line" id="timelineLine"></div>
+      </div>
+
+      <p class="timeline-unit-text text-lg text-left text-black pl-6 ">
+        <?php echo $history_date ?>
+      </p>
     </div>
 
 
@@ -43,4 +69,3 @@ if ( have_rows('above_the_fold_section') ):
 endwhile;
 endif;
 ?>
-
