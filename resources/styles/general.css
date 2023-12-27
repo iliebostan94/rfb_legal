@@ -125,7 +125,7 @@ div#search-filter-results-602 div.insight-result-unit div.insight-result-unit-th
   @apply h-2/3;
 }
 div#search-filter-results-602 div.insight-result-unit div.insight-result-unit-thumbnail img {
-  @apply rounded-t-xl h-full;
+  @apply rounded-t-xl h-full object-cover;
 }
 div#search-filter-results-602 div.insight-result-unit div.insight-result-unit-content h2.insight-result-unit-title {
   overflow: hidden;
