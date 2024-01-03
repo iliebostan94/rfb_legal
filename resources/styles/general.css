@@ -1,7 +1,7 @@
 
 
 /*CSS rules only for mobile*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
   div.card-wrapper card.pricing-card:first-child {
     @apply mt-12;
@@ -18,9 +18,22 @@
 }
 /* END for Mobile rules */
 
+/*CSS rules only for iPad */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+
+
+}
+
 /*CSS rules only for DESKTOP */
 @media only screen and (min-width: 1280px) {
+/*MEET OUR TEAM GLIDE SLIDER*/
+/*  div#animation-team-carousel.glide div.glide__arrows button.glide__arrow--left {*/
+/*    left: 12rem;*/
+/*  }*/
 
+/*  div#animation-team-carousel.glide div.glide__arrows button.glide__arrow--right {*/
+/*    right: 12rem;*/
+/*  }*/
 
 }
 /* END for DESKTOP rules */
@@ -78,8 +91,14 @@ p#yoast-breadcrumbs span:first-of-type {
 
 /*------------------------*/
 
-div.tier_testimonials_sidebar_slider_stepper button.line-step-slider {
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity)) !important;
+button.testimonials_sidebar_glide_unit {
+  width: 16px;
+  height: 2px;
+  border-radius: 0;
+  @apply bg-cloudBlue;
+}
+button.testimonials_sidebar_glide_unit.glide__bullet--active {
+  @apply bg-white;
 }
 
 .gradientBlueBackground {

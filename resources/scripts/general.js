@@ -5,6 +5,7 @@
 
 
 function draggableHistoryWidget() {
+  if (!document.querySelector(".timeline-wrapper")) return;
 
   const timelineWrapper = document.querySelector(".timeline-wrapper");
   let isDragging = false;

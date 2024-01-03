@@ -123,7 +123,7 @@ const config = {
     ],
   },
   plugins: [
-    import('flowbite/plugin.js'),
+    require('flowbite/plugin'),
     require('tailwind-scrollbar'),
     require('tailwindcss-animated'),
   ],

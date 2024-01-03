@@ -8,7 +8,7 @@ if ($group['active']) {
   ?>
 
 <section class="bg-white w-full">
-  <div class="max-w-5xl px-5 py-12 max-h-full mx-auto">
+  <div class="max-w-screen-2xl px-5 py-12 max-h-full mx-auto">
 
     <div class="meet-team-carousel-title max-w-4xl py-4 px-3 md:px-3 md:py-14 mx-auto text-center">
       <h2 class="text-4xl mb-5 md:mb-10 font-semibold text-brandBlue">

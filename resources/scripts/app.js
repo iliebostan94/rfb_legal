@@ -1,10 +1,10 @@
 import { domReady } from "@roots/sage/client";
-import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm';
+import Glide from '@glidejs/glide';
+// import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm';
 import { Carousel } from 'flowbite';
 import "./customMegaMenuMobile.js";
 import "./customMegaMenuDesktop.js";
 import "./general.js";
-// import "./allCarousels.js"
 
 
 /**
@@ -32,15 +32,73 @@ function testItFirst() {
   console.log("testing func");
 }
 
+// Glide
+// new Glide('#animation-team-carousel' , { type:'slider', perView:6, breakpoints:{ 700: {perView:1}, 1200: {perView: 3}, 1400: {perView:6}}, startAt:0, gap:50, }).mount({ Controls, Breakpoints });
+// new Glide('#insights-carousel' , { type:'slider', perView:5, breakpoints:{ 700: {perView:1}, 1200: {perView: 3}, 1400: {perView:5}}, startAt:0, gap:50, }).mount({ Controls, Breakpoints });
+// new Glide('#testimonials-sidebar' , { type:'slider', perView:1, startAt:0, gap:0, }).mount({ Controls, Breakpoints });
+
+
+function animationTeamCarousel() {
+  if (!document.querySelector("#animation-team-carousel")) return;
+
+  document.querySelectorAll('#animation-team-carousel').forEach((element) => {
+    let animationTeamCarousel = new Glide("#animation-team-carousel", {
+      type:'slider',
+      perView: 4,
+      breakpoints:{
+        700: {perView: 1},
+        1200: {perView: 3},
+        1400: {perView: 4}},
+      peek: {
+        before: 150,
+        after: 150,
+      },
+      startAt: 2,
+      gap: 50,
+    });
+    animationTeamCarousel.mount();
+  })
+}
+function insightsCarousel() {
+  if (!document.querySelector("#insights-carousel")) return;
+
+  document.querySelectorAll('#insights-carousel').forEach((element) => {
+    let insightsCarousel = new Glide("#insights-carousel", {
+      type:'slider',
+      perView: 3,
+      breakpoints:{
+        700: {perView: 1},
+        1200: {perView: 3},
+        1400: {perView: 3}},
+      peek: {
+        before: 150,
+        after: 150,
+      },
+      startAt: 2,
+      gap: 50,
+    });
+    insightsCarousel.mount();
+  })
+}
+function testimonialsSlider() {
+  if (!document.querySelector("#testimonials-sidebar")) return;
+
+  document.querySelectorAll('#testimonials-sidebar').forEach((element) => {
+    let testimonialsSidebar = new Glide("#testimonials-sidebar", {
+      autoplay: 2000,
+      type: "slider",
+      perView: 1,
+      startAt: 0,
+      gap: 0,
+    });
+    testimonialsSidebar.mount();
+  })
+}
 window.addEventListener("DOMContentLoaded", () => {
-  // Glide
-  new Glide('#animation-team-carousel' , { type:'slider', perView:4, breakpoints:{ 600: {perView:1}, 1200: {perView:4}}, startAt:0, gap:50, }).mount({ Controls, Breakpoints });
-  new Glide('#insights-carousel' , { type:'slider', startAt:0, perView:3, breakpoints:{ 600: {perView:1}, 1200: {perView:3}}, gap:50, }).mount({ Controls, Breakpoints });
+  console.log("testing func");
 
-  // Tailwind CSS Carousel - Flowbite
-  const carouselElement = document.getElementById('animation-carousel');
-  new Carousel(carouselElement, );
-
-  // testItFirst();
+  animationTeamCarousel();
+  insightsCarousel();
+  testimonialsSlider();
 
 });
