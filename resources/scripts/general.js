@@ -21,6 +21,7 @@ function draggableHistoryWidget() {
     });
   });
 
+<<<<<<< HEAD
   function handleDrag(e) {
     if (isDragging) {
       const deltaX = e.clientX - startX;
@@ -29,6 +30,10 @@ function draggableHistoryWidget() {
     }
   }
 }
+=======
+function draggableHistoryWidget() {
+  if (!document.querySelector(".timeline-wrapper")) return;
+>>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
 function draggableHistoryWidgetAboutUs() {
   if (!document.querySelector(".about-us-timeline-wrapper")) return;

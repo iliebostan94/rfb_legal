@@ -12,8 +12,13 @@ while( have_rows('awards_accreditations_group', 'options') ) : the_row();
 
   ?>
 
+<<<<<<< HEAD
 <section class="awards_theme_default_section bg-white relative z-10 my-10 md:my-72px">
   <div class="mx-auto max-w-5xl text-center">
+=======
+<section class="bg-white">
+  <div class="py-8 px-4 mx-auto max-w-5xl text-center md:py-16 md:px-0">
+>>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
     <h2 class="mb-6 text-3xl font-medium tracking-tight leading-none text-brandBlue md:text-4xl">
       <?php echo $accreditations_title ?>
     </h2>

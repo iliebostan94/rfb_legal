@@ -33,12 +33,20 @@ function testItFirst() {
 }
 
 // Glide
+<<<<<<< HEAD
+=======
+// new Glide('#animation-team-carousel' , { type:'slider', perView:6, breakpoints:{ 700: {perView:1}, 1200: {perView: 3}, 1400: {perView:6}}, startAt:0, gap:50, }).mount({ Controls, Breakpoints });
+// new Glide('#insights-carousel' , { type:'slider', perView:5, breakpoints:{ 700: {perView:1}, 1200: {perView: 3}, 1400: {perView:5}}, startAt:0, gap:50, }).mount({ Controls, Breakpoints });
+// new Glide('#testimonials-sidebar' , { type:'slider', perView:1, startAt:0, gap:0, }).mount({ Controls, Breakpoints });
+
+>>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
 function animationTeamCarousel() {
   if (!document.querySelector("#animation-team-carousel")) return;
 
   document.querySelectorAll('#animation-team-carousel').forEach((element) => {
     let animationTeamCarousel = new Glide("#animation-team-carousel", {
+<<<<<<< HEAD
       type:'carousel',
       perView: 4,
       breakpoints: {
@@ -48,11 +56,25 @@ function animationTeamCarousel() {
         1600: {perView: 4},
       },
       startAt: 0,
+=======
+      type:'slider',
+      perView: 4,
+      breakpoints:{
+        700: {perView: 1},
+        1200: {perView: 3},
+        1400: {perView: 4}},
+      peek: {
+        before: 150,
+        after: 150,
+      },
+      startAt: 2,
+>>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
       gap: 50,
     });
     animationTeamCarousel.mount();
   })
 }
+<<<<<<< HEAD
 
 function tierKeyPeopleCarousel() {
   if (!document.querySelector("#tier-template-key-people-carousel")) return;
@@ -225,15 +247,57 @@ function defaultTierRelatedInsightFunction() {
 
 window.addEventListener("DOMContentLoaded", () => {
   // console.log("testing func");
+=======
+function insightsCarousel() {
+  if (!document.querySelector("#insights-carousel")) return;
+
+  document.querySelectorAll('#insights-carousel').forEach((element) => {
+    let insightsCarousel = new Glide("#insights-carousel", {
+      type:'slider',
+      perView: 3,
+      breakpoints:{
+        700: {perView: 1},
+        1200: {perView: 3},
+        1400: {perView: 3}},
+      peek: {
+        before: 150,
+        after: 150,
+      },
+      startAt: 2,
+      gap: 50,
+    });
+    insightsCarousel.mount();
+  })
+}
+function testimonialsSlider() {
+  if (!document.querySelector("#testimonials-sidebar")) return;
+
+  document.querySelectorAll('#testimonials-sidebar').forEach((element) => {
+    let testimonialsSidebar = new Glide("#testimonials-sidebar", {
+      autoplay: 2000,
+      type: "slider",
+      perView: 1,
+      startAt: 0,
+      gap: 0,
+    });
+    testimonialsSidebar.mount();
+  })
+}
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("testing func");
+>>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
   animationTeamCarousel();
   insightsCarousel();
   testimonialsSlider();
+<<<<<<< HEAD
   tierKeyPeopleCarousel();
   peopleIndividualTestimonialsSlider();
   peopleIndividualRelatedInsightsCustom();
   peopleIndividualRelatedInsightsDefault();
   customTierRelatedInsightsFunction();
   defaultTierRelatedInsightFunction();
+=======
+>>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
 });

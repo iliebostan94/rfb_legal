@@ -22,11 +22,23 @@
 
     @include('partials.homepage_partials.services_section')
 
+<<<<<<< HEAD
     @include('partials.theme_partials.need_assistance_banner_full')
+=======
+    @include('partials.theme_partials.need_assistance_banner')
+>>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
     @include('partials.theme_partials.meet_team_default_section')
 
     @include('partials.theme_partials.theme_default_testimonials')
+<<<<<<< HEAD
+=======
+
+    @include('partials.theme_partials.theme_default_contact_form')
+
+    <!-- @include('partials.theme_partials.theme_insights_slider') -->
+
+>>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
     @include('partials.theme_partials.theme_default_contact_form')
 
