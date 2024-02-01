@@ -16,25 +16,31 @@ if (screen && screen.width > 800) {
 
     // create column (Personal & Business) top EXPLORE Nav bar
     let nameDivThirdLevelPersonal = document.createElement('div');
-    nameDivThirdLevelPersonal.classList.add('text-black', 'p-4', 'text-xl');
+    nameDivThirdLevelPersonal.classList.add('text-brandBlue', 'p-4', 'text-2xl', 'font-bold', 'capitalize', 'm-3', 'bg-white' , 'rounded-lg', 'mt-2.5', 'mb-2', 'mx-8');
+    let nameDivThirdLevelPersonalSeparationBar = document.createElement('div');
+    nameDivThirdLevelPersonalSeparationBar.classList.add('w-20', 'bg-accentGold', 'h-1', 'rounded-full', 'my-4');
     let exploreDivThirdLevelPersonal = document.createElement('a');
-    exploreDivThirdLevelPersonal.classList.add('block', 'text-black', 'pt-2', 'text-sm', 'third-level-explore-title');
+    exploreDivThirdLevelPersonal.classList.add('block', 'text-darkGrey', 'text-sm', 'font-bold', 'uppercase', 'third-level-explore-title');
 
     let nameDivThirdLevelBusiness = document.createElement('div');
-    nameDivThirdLevelBusiness.classList.add('text-black', 'p-4', 'text-xl');
+    nameDivThirdLevelBusiness.classList.add('text-brandBlue', 'p-4', 'text-2xl', 'font-bold', 'capitalize', 'm-3', 'bg-white' , 'rounded-lg', 'mt-2.5', 'mb-2', 'mx-8');
+    let nameDivThirdLevelBusinessSeparationBar = document.createElement('div');
+    nameDivThirdLevelBusinessSeparationBar.classList.add('w-20', 'bg-accentGold', 'h-1', 'rounded-full', 'my-4');
     let exploreDivThirdLevelBusiness = document.createElement('a');
-    exploreDivThirdLevelBusiness.classList.add('block', 'text-black', 'pt-2', 'text-sm', 'third-level-explore-title');
+    exploreDivThirdLevelBusiness.classList.add('block', 'text-darkGrey', 'text-sm', 'font-bold', 'uppercase', 'third-level-explore-title');
 
     nameDivThirdLevelPersonal.textContent = document.querySelector('#mega-menu-item-150 a').textContent;
     exploreDivThirdLevelPersonal.textContent = "EXPLORE";
     exploreDivThirdLevelPersonal.href = document.querySelector('#mega-menu-item-150 a').href;
     nameDivThirdLevelPersonal.append(exploreDivThirdLevelPersonal);
+    exploreDivThirdLevelPersonal.prepend(nameDivThirdLevelPersonalSeparationBar);
     personalItemColumn.prepend(nameDivThirdLevelPersonal);
 
     nameDivThirdLevelBusiness.textContent = document.querySelector('#mega-menu-item-151 a').textContent;
     exploreDivThirdLevelBusiness.textContent = "EXPLORE";
     exploreDivThirdLevelBusiness.href = document.querySelector('#mega-menu-item-151 a').href;
     nameDivThirdLevelBusiness.append(exploreDivThirdLevelBusiness);
+    exploreDivThirdLevelBusiness.prepend(nameDivThirdLevelBusinessSeparationBar);
     businessItemColumn.prepend(nameDivThirdLevelBusiness);
 
 
@@ -49,9 +55,10 @@ if (screen && screen.width > 800) {
 
 
     let nameDivThirdLevel = document.createElement('div');
-    nameDivThirdLevel.classList.add('text-black', 'p-4', 'text-xl', 'm-3', 'bg-white');
+    nameDivThirdLevel.classList.add('text-brandBlue', 'p-4', 'text-2xl', 'font-bold', 'capitalize', 'm-3', 'bg-white' , 'rounded-lg', 'mt-2.5', 'mb-2', 'mx-8');
+    let nameDivThirdLevelSeparationBar = document.createElement('div');
     let exploreDivThirdLevel = document.createElement('a');
-    exploreDivThirdLevel.classList.add('block', 'text-black', 'pt-2', 'text-sm', 'third-level-explore-title');
+    exploreDivThirdLevel.classList.add('block', 'text-darkGrey', 'text-sm', 'font-bold', 'uppercase', 'third-level-explore-title');
 
     thirdLevelParents.forEach(function (thirdLevelChildren) {
       let thirdLevelTrigger = thirdLevelChildren.querySelector("span.mega-indicator");
@@ -76,6 +83,8 @@ if (screen && screen.width > 800) {
           nameDivThirdLevel.textContent = thirdLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
           exploreDivThirdLevel.textContent = "EXPLORE";
           nameDivThirdLevel.append(exploreDivThirdLevel);
+          nameDivThirdLevelSeparationBar.classList.add('w-20', 'bg-accentGold', 'h-1', 'rounded-full', 'my-4');
+          exploreDivThirdLevel.prepend(nameDivThirdLevelSeparationBar);
           thirdLevelUL.prepend(nameDivThirdLevel);
 
 

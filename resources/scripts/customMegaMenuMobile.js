@@ -29,8 +29,14 @@ if (screen && screen.width < 800) {
     const firstLevelParents = document.querySelectorAll(".first-level-parent");
 
     let backIconSpan = document.createElement('span');
-    backIconSpan.classList.add('custom-back-indicator');
+    backIconSpan.classList.add('custom-back-indicator' , 'mb-4' , 'text-base' , 'font-normal' , 'text-darkGrey' , 'leading-6');
     backIconSpan.setAttribute('data-has-click-event', 'true');
+
+    let nameSpanFirstLevel = document.createElement('span');
+    nameSpanFirstLevel.classList.add('text-brandBlue', 'font-semibold', 'text-2xl' , 'leading-8');
+
+    let firstLevelSeparationBar = document.createElement('div');
+    firstLevelSeparationBar.classList.add('w-20', 'bg-accentGold', 'h-1', 'rounded-full', 'my-4');
 
     backIconSpan.addEventListener('click', function (backIconEvent) {
       backIconEvent.preventDefault();
@@ -40,7 +46,7 @@ if (screen && screen.width < 800) {
     });
 
     let nameDiv = document.createElement('div');
-    nameDiv.classList.add('text-black', 'p-2', 'text-xl');
+    nameDiv.classList.add('flex', 'flex-col', 'text-black', 'p-3', 'text-xl');
 
     firstLevelParents.forEach(function (firstLevelChildren) {
       let firstLevelTrigger = firstLevelChildren.querySelector("span.mega-indicator");
@@ -51,11 +57,13 @@ if (screen && screen.width < 800) {
         let firstUL = firstLevelChildren.querySelector('.mega-sub-menu');
 
         if (firstUL) {
-          firstUL.classList.add("first-level-container-panel", "firstLevelSuperClass", "animate-fade-left", "animate-duration-500");
 
-          nameDiv.textContent = firstLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
-
+          backIconSpan.textContent = " Back";
+          firstUL.classList.add("first-level-container-panel", "firstLevelSuperClass", "animate-fade-left", "animate-duration-500" , "z-91" );
+          nameSpanFirstLevel.textContent    = firstLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
           nameDiv.prepend(backIconSpan);
+          nameDiv.append(nameSpanFirstLevel);
+          nameDiv.append(firstLevelSeparationBar);
           firstUL.prepend(nameDiv);
 
         } else {
@@ -71,8 +79,14 @@ if (screen && screen.width < 800) {
     const secondLevelParents = document.querySelectorAll(".second-level-parent");
 
     let backIconSpanSecondLevel = document.createElement('span');
-    backIconSpanSecondLevel.classList.add('custom-back-indicator');
+    backIconSpanSecondLevel.classList.add('custom-back-indicator' , 'mb-4' , 'text-base' , 'font-normal' , 'text-darkGrey' , 'leading-6');
     backIconSpanSecondLevel.setAttribute('data-has-click-event', 'true');
+
+    let nameSpanSecondLevel = document.createElement('span');
+    nameSpanSecondLevel.classList.add('text-brandBlue', 'font-semibold', 'text-2xl' , 'leading-8');
+
+    let secondLevelSeparationBar = document.createElement('div');
+    secondLevelSeparationBar.classList.add('w-20', 'bg-accentGold', 'h-1', 'rounded-full', 'my-4');
 
     backIconSpanSecondLevel.addEventListener('click', function (backIconEvent) {
       backIconEvent.preventDefault();
@@ -82,9 +96,9 @@ if (screen && screen.width < 800) {
     });
 
     let nameDivSecondLevel = document.createElement('div');
-    nameDivSecondLevel.classList.add('text-black', 'p-2', 'text-xl');
+    nameDivSecondLevel.classList.add( 'flex', 'flex-col', 'text-black', 'p-3', 'text-xl');
     let exploreDivSecondLevel = document.createElement('a');
-    exploreDivSecondLevel.classList.add('block', 'text-black', 'p-2', 'text-sm', 'ml-8', 'second-level-explore-title');
+    exploreDivSecondLevel.classList.add('block', 'text-darkGrey', 'font-bold', 'uppercase', 'text-sm', 'second-level-explore-title');
 
     secondLevelParents.forEach(function (secondLevelChildren) {
       let secondLevelTrigger = secondLevelChildren.querySelector("span.mega-indicator");
@@ -97,9 +111,13 @@ if (screen && screen.width < 800) {
           secondLevelUL.classList.add("second-level-container-panel", "secondLevelSuperClass", "animate-fade-left", "animate-duration-500");
 
           exploreDivSecondLevel.href = secondLevelChildren.querySelector('a').href;
-          nameDivSecondLevel.textContent = secondLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
+          backIconSpanSecondLevel.textContent = " Back";
+          // nameDivSecondLevel.textContent = secondLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
+          nameSpanSecondLevel.textContent = secondLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
           exploreDivSecondLevel.textContent = "EXPLORE";
           nameDivSecondLevel.prepend(backIconSpanSecondLevel);
+          nameDivSecondLevel.append(nameSpanSecondLevel);
+          nameDivSecondLevel.append(secondLevelSeparationBar);
           nameDivSecondLevel.append(exploreDivSecondLevel);
           secondLevelUL.prepend(nameDivSecondLevel);
 
@@ -119,8 +137,14 @@ if (screen && screen.width < 800) {
     const thirdLevelParents = document.querySelectorAll(".third-level-parent");
 
     let backIconSpanThirdLevel = document.createElement('span');
-    backIconSpanThirdLevel.classList.add('custom-back-indicator');
+    backIconSpanThirdLevel.classList.add('custom-back-indicator' , 'mb-4' , 'text-base' , 'font-normal' , 'text-darkGrey' , 'leading-6');
     backIconSpanThirdLevel.setAttribute('data-has-click-event', 'true');
+
+    let nameSpanThirdLevel = document.createElement('span');
+    nameSpanThirdLevel.classList.add('text-brandBlue', 'font-semibold', 'text-2xl' , 'leading-8');
+
+    let thirdLevelSeparationBar = document.createElement('div');
+    thirdLevelSeparationBar.classList.add('w-20', 'bg-accentGold', 'h-1', 'rounded-full', 'my-4');
 
     backIconSpanThirdLevel.addEventListener('click', function (backIconEvent) {
       backIconEvent.preventDefault();
@@ -133,9 +157,9 @@ if (screen && screen.width < 800) {
     });
 
     let nameDivThirdLevel = document.createElement('div');
-    nameDivThirdLevel.classList.add('text-black', 'p-2', 'text-xl');
+    nameDivThirdLevel.classList.add('flex', 'flex-col', 'text-black', 'p-3', 'text-xl');
     let exploreDivThirdLevel = document.createElement('a');
-    exploreDivThirdLevel.classList.add('block', 'text-black', 'p-2', 'text-sm', 'ml-8', 'third-level-explore-title');
+    exploreDivThirdLevel.classList.add('block', 'text-darkGrey', 'font-bold', 'uppercase', 'text-sm', 'third-level-explore-title');
 
     thirdLevelParents.forEach(function (thirdLevelChildren) {
       let thirdLevelTrigger = thirdLevelChildren.querySelector("span.mega-indicator");
@@ -153,9 +177,13 @@ if (screen && screen.width < 800) {
           thirdLevelUL.classList.add("third-level-container-panel", "thirdLevelSuperClass", "animate-fade-left", "animate-duration-500");
 
           exploreDivThirdLevel.href = thirdLevelChildren.querySelector('a').href;
-          nameDivThirdLevel.textContent = thirdLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
+          backIconSpanThirdLevel.textContent = " Back";
+          nameSpanThirdLevel.textContent = thirdLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
+          // nameDivThirdLevel.textContent = thirdLevelChildren.querySelector('a').textContent; // Get the text content of the <a> tag
           exploreDivThirdLevel.textContent = "EXPLORE";
           nameDivThirdLevel.prepend(backIconSpanThirdLevel);
+          nameDivThirdLevel.append(nameSpanThirdLevel);
+          nameDivThirdLevel.append(thirdLevelSeparationBar);
           nameDivThirdLevel.append(exploreDivThirdLevel);
           thirdLevelUL.prepend(nameDivThirdLevel);
 
@@ -176,7 +204,6 @@ if (screen && screen.width < 800) {
     mobileMenuChildrenLevelExpansion();
     mobileMenuChildrenSecondLevelExpansion();
     mobileMenuChildrenThirdLevelExpansion();
-
   });
 
 }

@@ -34,7 +34,7 @@ export default async (app) => {
    */
   app
     .setPublicPath("/wp-content/themes/rfb-legal/public/")
-    // .setUrl('http://localhost:10043')
+    // .setUrl('http://localhost:10034')
     // .setProxyUrl('http://example.test')
     // .watch(['resources/views', 'app']);
 

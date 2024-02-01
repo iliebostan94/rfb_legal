@@ -1,7 +1,7 @@
 
 <section @php(post_class('h-entry ')) >
 
-  <?php if ( !is_page_template( ['homepage-template.blade.php', 'tier1-template.blade.php', 'tier2-template.blade.php'] ) ) { ?>
+  <?php if ( !is_page_template( ['homepage-template.blade.php', 'tier1-template.blade.php', 'tier2-template.blade.php', 'tier3-template.blade.php'] ) ) { ?>
 
   <header class="mt-20 flex flex-row justify-center items-center post-thumbnail w-full max-w-full min-w-full h-400 lg:h-420 bg-center bg-no-repeat bg-cover" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">
     <h1 class="text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white ">

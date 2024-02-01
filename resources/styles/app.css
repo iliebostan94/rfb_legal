@@ -5,3 +5,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*@font-face { font-family: proxima-nova; src: url(/home/ilie/Local Sites/rfblegal-smartdata/app/public/wp-content/themes/rfb-legal/resources/fonts/proximanova_regular.ttf); font-weight: normal; }*/
+
+@layer base {
+  html {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+}

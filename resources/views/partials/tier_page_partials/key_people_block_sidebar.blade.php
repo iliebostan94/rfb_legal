@@ -1,4 +1,3 @@
-
 <?php
 $group = acf_get_field_group('group_657b172132538'); // your field group key
 if ($group['active']) {
@@ -18,24 +17,37 @@ if ($group['active']) {
 
   ?>
 
-<section class="key_people_block_sidebar mb-10">
-  <div class="max-w-sm pt-4 pb-6 px-3 m-auto flex flex-col justify-between bg-customDarkGrey-700 rounded-lg">
-    <div class="text-center mb-6">
-      <h2 class="text-2xl font-medium title-font text-white px-8"><?php echo $key_people_title ?></h2>
+<section class="key_people_block_sidebar_section mb-10">
+  <div class="max-w-sm p-4 m-auto flex flex-col justify-between gradientBlueBackground md:rounded-lg">
+    <div class="text-left mb-6">
+      <h2 class="text-2xl font-bold leading-8 title-font text-white">
+        <?php echo $key_people_title ?>
+      </h2>
+      <div class="w-full mt-6">
+        <div class="w-20 bg-accentGold h-1 rounded-full"> </div>
+      </div>
     </div>
-    <div class="flex flex-col lg:flex-row w-full">
-      <div class="w-1/2 flex flex-col items-center contact-info-unit">
-        <img class="w-40 h-40 rounded-lg" src="<?php echo $key_first_person_image ?>" alt="key person image">
-        <div class="bg-customGrey-400 p-3 w-40 rounded-lg text-black">
-          <p class="leading-relaxed text-sm md:text-base font-semibold"><?php echo $key_first_person_name ?></p>
-          <p class="text-xs md:text-sm font-medium"><?php echo $key_first_person_subtitle ?></p>
+    <div class="flex flex-wrap w-full gap-4">
+      <div class="w-40 flex flex-col items-center contact-info-unit">
+        <img class="w-full h-40 rounded-lg" src="<?php echo $key_first_person_image ?>" alt="key person image">
+        <div class="bg-cloudGrey p-3 w-40 rounded-lg text-brandBlue">
+          <p class="leading-relaxed text-sm md:text-base font-semibold">
+            <?php echo $key_first_person_name ?>
+          </p>
+          <p class="text-xs md:text-sm font-medium text-darkGrey">
+            <?php echo $key_first_person_subtitle ?>
+          </p>
         </div>
       </div>
-      <div class="w-1/2 flex flex-col items-center contact-info-unit">
+      <div class="w-40 flex flex-col items-center contact-info-unit">
         <img class="w-40 h-40 rounded-lg" src="<?php echo $key_second_person_image ?>" alt="key person image">
-        <div class="bg-customGrey-400 p-3 w-40 rounded-lg text-black">
-          <p class="leading-relaxed text-sm md:text-base font-semibold"><?php echo $key_second_person_name ?></p>
-          <p class="text-xs md:text-sm font-medium"><?php echo $key_second_person_subtitle ?></p>
+        <div class="bg-cloudGrey p-3 w-40 rounded-lg text-brandBlue">
+          <p class="leading-relaxed text-sm md:text-base font-semibold">
+            <?php echo $key_second_person_name ?>
+          </p>
+          <p class="text-xs md:text-sm font-medium text-darkGrey">
+            <?php echo $key_second_person_subtitle ?>
+          </p>
         </div>
       </div>
     </div>

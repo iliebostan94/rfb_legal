@@ -1,0 +1,3 @@
+# .gitattributes
+# When there's a conflict in package-lock.json, use the lockfile from the current branch
+package-lock.json merge=ours

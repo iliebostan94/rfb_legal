@@ -13,7 +13,7 @@
     if ($group['active']) {
       ?>
     {{--  homepage group--}}
-    {{--    @include('partials.homepage_partials.homepage-main-hero-video-section')--}}
+
     @include('partials.homepage_partials.homepage-hero-main-section')
     @include('partials.homepage_partials.homepage-quick-stats-section')
     @include('partials.homepage_partials.homepage-history-company')
@@ -22,17 +22,13 @@
 
     @include('partials.homepage_partials.services_section')
 
-    @include('partials.theme_partials.need_assistance_banner')
-
-    @include('partials.theme_partials.theme_default_testimonials')
+    @include('partials.theme_partials.need_assistance_banner_full')
 
     @include('partials.theme_partials.meet_team_default_section')
 
+    @include('partials.theme_partials.theme_default_testimonials')
+
     @include('partials.theme_partials.theme_default_contact_form')
-
-    @include('partials.theme_partials.theme_insights_slider')
-
-
 
     {{--    @include('partials.content')--}}
       <?php
