@@ -31,13 +31,6 @@
     width: 100vw;
   }
 
-  form.searchandfilter > ul {
-    @apply flex flex-col gap-3;
-  }
-  form.searchandfilter li.sf-field-search{
-    @apply flex flex-col gap-3;
-    max-width: 280px;
-  }
 
 }
 /* END for Mobile rules */
@@ -45,31 +38,18 @@
 /*CSS rules only for iPad */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
 
-<<<<<<< HEAD
   #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation {
     padding: 0 50px 0 0;
   }
-=======
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
 }
 
 /*CSS rules only for DESKTOP */
 @media only screen and (min-width: 1280px) {
-/*MEET OUR TEAM GLIDE SLIDER*/
-/*  div#animation-team-carousel.glide div.glide__arrows button.glide__arrow--left {*/
-/*    left: 12rem;*/
-/*  }*/
 
-<<<<<<< HEAD
   body.admin-bar header nav {
     top: 32px;
   }
-=======
-/*  div#animation-team-carousel.glide div.glide__arrows button.glide__arrow--right {*/
-/*    right: 12rem;*/
-/*  }*/
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
   /* Desktop Search rules */
   #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li.mega-search-menu-item {
@@ -179,16 +159,9 @@ div.timeline-e-1 {
 }
 
 /*add the horizontal scroll bar on desktop*/
-<<<<<<< HEAD
 section.timeline-section:hover ol.timeline-wrapper , div.about_us_history_block:hover ol.about-us-timeline-wrapper {
   /*  @apply overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100;*/
   @apply overflow-x-scroll;
-=======
-section.timeline-section:hover ol.timeline-wrapper {
-  /*  @apply overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-100;*/
-  @apply overflow-x-scroll;
-
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 }
 
 a.services-link::after {
@@ -217,7 +190,6 @@ button.testimonials_sidebar_glide_unit {
   height: 2px;
   border-radius: 0;
   @apply bg-cloudBlue;
-<<<<<<< HEAD
 }
 button.testimonials_sidebar_glide_unit.glide__bullet--active {
   @apply bg-white;
@@ -240,48 +212,19 @@ form.searchandfilter li.sf-field-search h4 {
 form.searchandfilter li.sf-field-search input.sf-input-text {
   @apply rounded py-3 px-4 border-0;
 }
-=======
-}
-button.testimonials_sidebar_glide_unit.glide__bullet--active {
-  @apply bg-white;
-}
-
-.gradientBlueBackground {
-  background-image: linear-gradient(-45deg, #142C50 0%, #00317E 90%, #00317E 100%)
-}
-
-/*filter styles from Insights template*/
-form.searchandfilter > ul {
-  @apply flex items-center;
-}
-form.searchandfilter li.sf-field-search{
-  @apply flex items-center;
-}
-form.searchandfilter li.sf-field-search h4 {
-  @apply text-xl font-semibold p-0 mr-6;
-}
-form.searchandfilter li.sf-field-search input.sf-input-text {
-  @apply rounded py-3 px-4;
-}
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 form.searchandfilter li.sf-field-author{
   @apply flex items-center p-0 mx-6 bg-white rounded py-0 px-4 h-12;
 }
 form.searchandfilter li.sf-field-author select{
-<<<<<<< HEAD
   @apply bg-white border-0;
 }
 form.searchandfilter li.sf-field-author select:focus , form.searchandfilter li.sf-field-category select:focus {
   --tw-ring-shadow: none;
-=======
-  @apply bg-white;
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 }
 form.searchandfilter li.sf-field-category{
   @apply flex items-center p-0 m-0 bg-white rounded py-0 px-4 h-12;
 }
 form.searchandfilter li.sf-field-category select{
-<<<<<<< HEAD
   @apply bg-white border-0;
 }
 
@@ -292,20 +235,12 @@ form.searchandfilter li.sf-field-tag select{
   @apply bg-white border-0;
 }
 
-=======
-  @apply bg-white;
-}
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 /* END filter styles from Insights template*/
 
 
 /*Insights RESULTS styles from Insights template*/
 div.search-filter-results {
-<<<<<<< HEAD
   @apply grid gap-x-5 grid-cols-1 lg:grid-cols-4 ;
-=======
-  @apply grid gap-x-8 grid-cols-1 lg:grid-cols-4 ;
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 }
 div.search-filter-results div.insight-result-unit {
   @apply flex flex-col items-center justify-start h-80 py-6;
@@ -314,11 +249,7 @@ div.search-filter-results div.insight-result-unit div.insight-result-unit-thumbn
   @apply h-2/3;
 }
 div.search-filter-results div.insight-result-unit div.insight-result-unit-thumbnail img {
-<<<<<<< HEAD
   @apply rounded-t-xl h-full object-cover aspect-2/1;
-=======
-  @apply rounded-t-xl h-full;
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 }
 div.search-filter-results div.insight-result-unit div.insight-result-unit-content h2.insight-result-unit-title {
   overflow: hidden;
@@ -326,7 +257,6 @@ div.search-filter-results div.insight-result-unit div.insight-result-unit-conten
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-<<<<<<< HEAD
 /* END Insights RESULTS styles from Insights template*/
 
 /*People RESULTS styles from Insights template*/
@@ -370,8 +300,4 @@ body.page-template-homepage-template section.theme_default_contact_form_section 
 }
 
 
-=======
-
-/* END Insights RESULTS styles from Insights template*/
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 

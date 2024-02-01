@@ -59,7 +59,6 @@ const config = {
         '25%': '25%',
         '20%': '20%',
         '10%': '10%',
-<<<<<<< HEAD
         '356px': '356px',
         '858px': '858px',
         '904px': '904px',
@@ -73,10 +72,6 @@ const config = {
       },
       height: {
         354: '354px',
-=======
-      },
-      height: {
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
         400: '25rem',
         420: '26.25rem',
         450: '28.125rem',
@@ -94,7 +89,6 @@ const config = {
         750: '46.875rem',
         780: '48.75rem',
         800: '50rem',
-<<<<<<< HEAD
       },
       padding: {
         '72px': '72px',
@@ -109,28 +103,18 @@ const config = {
         '50%' : '50%',
         '75%' : '75%',
         '100%' : '100%',
-=======
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
       },
       borderRadius: {
         56: '56px',
       },
       aspectRatio: {
-<<<<<<< HEAD
         '1/1': '1 / 1', '2/1': '2 / 1', '3/2': '3 / 2', '4/3': '4 / 3', '16/9': '16 / 9', '21/9': '21 / 9',
-=======
-        '1/1': '1 / 1', '2/1': '2 / 1', '4/3': '4 / 3', '16/9': '16 / 9', '21/9': '21 / 9',
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
       },
     },
   },
   fontFamily: {
     body: [
-<<<<<<< HEAD
       'proxima-nova',
-=======
-      'Proxima Nova',
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
       'sans-serif',
       'Inter',
       'ui-sans-serif',
@@ -148,11 +132,7 @@ const config = {
       'Noto Color Emoji',
     ],
     sans: [
-<<<<<<< HEAD
       'proxima-nova',
-=======
-      'Proxima Nova',
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
       'sans-serif',
       'Inter',
       'ui-sans-serif',

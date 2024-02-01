@@ -10,11 +10,7 @@ while( have_rows('insights_template_group') ) : the_row();
   $featured_insight_image        = get_sub_field('featured_insight_image');
   ?>
 
-<<<<<<< HEAD
 <section class="insights_hero_main_section relative h-700">
-=======
-<section class="relative h-700">
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
 
   <div class="relative md:absolute w-full h-80 md:h-full bg-cover bg-center" style="background-image: url(<?php echo $featured_insight_image ?>)"></div>
   <div class="mx-auto p-6 lg:p-0 max-w-7xl h-96 md:h-full bg-black md:bg-transparent flex flex-col justify-center relative animate-fade animate-delay-300 animation-duration-1000 animate-once">

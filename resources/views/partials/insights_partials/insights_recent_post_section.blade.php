@@ -10,13 +10,8 @@ while( have_rows('insights_template_group') ) : the_row();
 
   ?>
 
-<<<<<<< HEAD
 <section class="insights_recent_updates_section gradientBlueBackground w-full text-black recent-updates-section ">
   <div class="max-w-7xl  max-h-full mx-auto p-4 py-12 lg:py-16">
-=======
-<section class="gradientBlueBackground w-full text-black recent-updates-section ">
-  <div class="max-w-7xl py-12 max-h-full mx-auto p-4 lg:py-16">
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
             <h4 class="text-white text-xl lg:text-2xl py-4 lg:py-6 font-bold">Recent Updates</h4>
     <div class="flex flex-col lg:flex-row justify-center w-full text-black text-left gap-y-6 lg:gap-x-14 ">
             <?php

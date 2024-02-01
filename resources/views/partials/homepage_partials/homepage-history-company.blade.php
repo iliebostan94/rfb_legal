@@ -6,11 +6,7 @@ if ( have_rows('above_the_fold_section') ):
 
     ?>
 
-<<<<<<< HEAD
 <section class="timeline-section max-w-7xl flex flex-col justify-center text-center mx-auto mt-10 md:mt-72px">
-=======
-<section class="timeline-section max-w-7xl flex flex-col justify-center text-center mx-auto mb-6">
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
   <style>
     #repetitive:last-child #timelineBlock #timelineLine {
       display: none;
@@ -24,11 +20,7 @@ if ( have_rows('above_the_fold_section') ):
     <div class="w-20 bg-accentGold h-1 rounded-full"> </div>
   </div>
   <ol
-<<<<<<< HEAD
     class="timeline-wrapper relative flex pb-3 flex-row overflow-x-scroll scrollbar-thin cursor-grab select-none">
-=======
-    class="timeline-wrapper relative flex pb-3 flex-row mb-4 overflow-x-scroll scrollbar-thin cursor-grab select-none">
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
     <?php
       if ( have_rows('history_repeater') ):
         while( have_rows('history_repeater') ) : the_row();
@@ -76,8 +68,4 @@ if ( have_rows('above_the_fold_section') ):
 <?php
 endwhile;
 endif;
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> 25601ee4c1103e0a344d540d960fce3cf4971a26
